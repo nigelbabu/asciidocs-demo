@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Monitoring Workload</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Monitoring Workload
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class=" active" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Monitoring your GlusterFS Workload</h2>
+        </div>
+        <div class="sect1">
+<h2 id="monitoring-your-glusterfs-workload"><a class="anchor" href="#monitoring-your-glusterfs-workload"></a>Monitoring your GlusterFS Workload</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can monitor the GlusterFS volumes on different parameters.
+Monitoring volumes helps in capacity planning and performance tuning
+tasks of the GlusterFS volume. Using these information, you can identify
+and troubleshoot issues.</p>
+</div>
+<div class="paragraph">
+<p>You can use Volume Top and Profile commands to view the performance and
+identify bottlenecks/hotspots of each brick of a volume. This helps
+system administrators to get vital performance information whenever
+performance needs to be probed.</p>
+</div>
+<div class="paragraph">
+<p>You can also perform statedump of the brick processes and nfs server
+process of a volume, and also view volume status and volume information.</p>
+</div>
+<div class="sect2">
+<h3 id="running-glusterfs-volume-profile-command"><a class="anchor" href="#running-glusterfs-volume-profile-command"></a>Running GlusterFS Volume Profile Command</h3>
+<div class="paragraph">
+<p>GlusterFS Volume Profile command provides an interface to get the
+per-brick I/O information for each File Operation (FOP) of a volume. The
+per brick information helps in identifying bottlenecks in the storage
+system.</p>
+</div>
+<div class="paragraph">
+<p>This section describes how to run GlusterFS Volume Profile command by
+performing the following operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#start-profiling">Start Profiling</a></p>
+</li>
+<li>
+<p><a href="#displaying-io">Displaying the I/0 Information</a></p>
+</li>
+<li>
+<p><a href="#stop-profiling">Stop Profiling</a></p>
+<div class="literalblock">
+<div class="content">
+<pre>###Start Profiling</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You must start the Profiling to view the File Operation information for
+each brick.</p>
+</div>
+<div class="paragraph">
+<p>To start profiling, use following command:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume profile  start</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to start profiling on test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume profile test-volume start
+Profiling started on test-volume</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When profiling on the volume is started, the following additional
+options are displayed in the Volume Info:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>diagnostics.count-fop-hits: on
+diagnostics.latency-measurement: on</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Displaying the I/0 Information</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can view the I/O information of each brick by using the following
+command:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume profile  info</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to see the I/O information on test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume profile test-volume info
+Brick: Test:/export/2
+Cumulative Stats:
+
+Block                     1b+           32b+           64b+
+Size:
+       Read:                0              0              0
+       Write:             908             28              8
+
+Block                   128b+           256b+         512b+
+Size:
+       Read:                0               6             4
+       Write:               5              23            16
+
+Block                  1024b+          2048b+        4096b+
+Size:
+       Read:                 0              52           17
+       Write:               15             120          846
+
+Block                   8192b+         16384b+      32768b+
+Size:
+       Read:                52               8           34
+       Write:              234             134          286
+
+Block                                  65536b+     131072b+
+Size:
+       Read:                               118          622
+       Write:                             1341          594
+
+
+%-latency  Avg-      Min-       Max-       calls     Fop
+          latency   Latency    Latency
+___________________________________________________________
+4.82      1132.28   21.00      800970.00   4575    WRITE
+5.70       156.47    9.00      665085.00   39163   READDIRP
+11.35      315.02    9.00     1433947.00   38698   LOOKUP
+11.88     1729.34   21.00     2569638.00    7382   FXATTROP
+47.35   104235.02 2485.00     7789367.00     488   FSYNC
+
+------------------
+
+------------------
+
+Duration     : 335
+
+BytesRead    : 94505058
+
+BytesWritten : 195571980</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Stop Profiling</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can stop profiling the volume, if you do not need profiling
+information anymore.</p>
+</div>
+<div class="paragraph">
+<p>Stop profiling using the following command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>`# gluster volume profile  stop`</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example, to stop profiling on test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>`# gluster volume profile  stop`
+
+`Profiling stopped on test-volume`</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="running-glusterfs-volume-top-command"><a class="anchor" href="#running-glusterfs-volume-top-command"></a>Running GlusterFS Volume TOP Command</h3>
+<div class="paragraph">
+<p>GlusterFS Volume Top command allows you to view the glusterfs bricks’
+performance metrics like read, write, file open calls, file read calls,
+file write calls, directory open calls, and directory real calls. The
+top command displays up to 100 results.</p>
+</div>
+<div class="paragraph">
+<p>This section describes how to run and view the results for the following
+GlusterFS Top commands:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#open-fd-count">Viewing Open fd Count and Maximum fd Count</a></p>
+</li>
+<li>
+<p><a href="#file-read">Viewing Highest File Read Calls</a></p>
+</li>
+<li>
+<p><a href="#file-write">Viewing Highest File Write Calls</a></p>
+</li>
+<li>
+<p><a href="#open-dir">Viewing Highest Open Calls on Directories</a></p>
+</li>
+<li>
+<p><a href="#read-dir">Viewing Highest Read Calls on Directory</a></p>
+</li>
+<li>
+<p><a href="#read-perf">Viewing List of Read Performance on each Brick</a></p>
+</li>
+<li>
+<p><a href="#write-perf">Viewing List of Write Performance on each Brick</a></p>
+<div class="literalblock">
+<div class="content">
+<pre>###Viewing Open fd Count and Maximum fd Count</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can view both current open fd count (list of files that are
+currently the most opened and the count) on the brick and the maximum
+open fd count (count of files that are the currently open and the count
+of maximum number of files opened at any given point of time, since the
+servers are up and running). If the brick name is not specified, then
+open fd metrics of all the bricks belonging to the volume will be
+displayed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View open fd count and maximum fd count using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume top  open [brick ] [list-cnt ]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view open fd count and maximum fd count on brick
+server:/export of test-volume and list top 10 open calls:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume top  open brick  list-cnt</code></p>
+</div>
+<div class="paragraph">
+<p><code>Brick: server:/export/dir1</code></p>
+</div>
+<div class="paragraph">
+<p><code>Current open fd&#8217;s: 34 Max open fd&#8217;s: 209</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>             ==========Open file stats========
+
+open            file name
+call count
+
+2               /clients/client0/~dmtmp/PARADOX/
+                COURSES.DB
+
+11              /clients/client0/~dmtmp/PARADOX/
+                ENROLL.DB
+
+11              /clients/client0/~dmtmp/PARADOX/
+                STUDENTS.DB
+
+10              /clients/client0/~dmtmp/PWRPNT/
+                TIPS.PPT
+
+10              /clients/client0/~dmtmp/PWRPNT/
+                PCBENCHM.PPT
+
+9               /clients/client7/~dmtmp/PARADOX/
+                STUDENTS.DB
+
+9               /clients/client1/~dmtmp/PARADOX/
+                STUDENTS.DB
+
+9               /clients/client2/~dmtmp/PARADOX/
+                STUDENTS.DB
+
+9               /clients/client0/~dmtmp/PARADOX/
+                STUDENTS.DB
+
+9               /clients/client8/~dmtmp/PARADOX/
+                STUDENTS.DB</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Viewing Highest File Read Calls</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can view highest read calls on each brick. If brick name is not
+specified, then by default, list of 100 files will be displayed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View highest file Read calls using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume top  read [brick ] [list-cnt ]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view highest Read calls on brick server:/export of
+test-volume:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume top  read brick  list-cnt</code></p>
+</div>
+<div class="paragraph">
+<p><code>Brick:</code> server:/export/dir1</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>          ==========Read file stats========
+
+read              filename
+call count
+
+116              /clients/client0/~dmtmp/SEED/LARGE.FIL
+
+64               /clients/client0/~dmtmp/SEED/MEDIUM.FIL
+
+54               /clients/client2/~dmtmp/SEED/LARGE.FIL
+
+54               /clients/client6/~dmtmp/SEED/LARGE.FIL
+
+54               /clients/client5/~dmtmp/SEED/LARGE.FIL
+
+54               /clients/client0/~dmtmp/SEED/LARGE.FIL
+
+54               /clients/client3/~dmtmp/SEED/LARGE.FIL
+
+54               /clients/client4/~dmtmp/SEED/LARGE.FIL
+
+54               /clients/client9/~dmtmp/SEED/LARGE.FIL
+
+54               /clients/client8/~dmtmp/SEED/LARGE.FIL</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Viewing Highest File Write Calls</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can view list of files which has highest file write calls on each
+brick. If brick name is not specified, then by default, list of 100
+files will be displayed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View highest file Write calls using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume top  write [brick ] [list-cnt ]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view highest Write calls on brick server:/export of
+test-volume:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume top  write brick  list-cnt</code></p>
+</div>
+<div class="paragraph">
+<p><code>Brick: server:/export/dir1</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>               ==========Write file stats========
+write call count   filename
+
+83                /clients/client0/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client7/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client1/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client2/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client0/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client8/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client5/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client4/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client6/~dmtmp/SEED/LARGE.FIL
+
+59                /clients/client3/~dmtmp/SEED/LARGE.FIL</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Viewing Highest Open Calls on Directories</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can view list of files which has highest open calls on directories
+of each brick. If brick name is not specified, then the metrics of all
+the bricks belonging to that volume will be displayed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View list of open calls on each directory using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume top  opendir [brick ] [list-cnt ]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view open calls on brick server:/export/ of test-volume:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume top  opendir brick  list-cnt</code></p>
+</div>
+<div class="paragraph">
+<p><code>Brick: server:/export/dir1</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>         ==========Directory open stats========
+
+Opendir count     directory name
+
+1001              /clients/client0/~dmtmp
+
+454               /clients/client8/~dmtmp
+
+454               /clients/client2/~dmtmp
+
+454               /clients/client6/~dmtmp
+
+454               /clients/client5/~dmtmp
+
+454               /clients/client9/~dmtmp
+
+443               /clients/client0/~dmtmp/PARADOX
+
+408               /clients/client1/~dmtmp
+
+408               /clients/client7/~dmtmp
+
+402               /clients/client4/~dmtmp</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Viewing Highest Read Calls on Directory</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can view list of files which has highest directory read calls on
+each brick. If brick name is not specified, then the metrics of all the
+bricks belonging to that volume will be displayed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View list of highest directory read calls on each brick using the
+following command:</p>
+<div class="paragraph">
+<p><code># gluster volume top  readdir [brick ] [list-cnt ]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view highest directory read calls on brick
+server:/export of test-volume:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume top  readdir brick  list-cnt</code></p>
+</div>
+<div class="paragraph">
+<p><code>Brick:</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>==========Directory readdirp stats========
+
+readdirp count           directory name
+
+1996                    /clients/client0/~dmtmp
+
+1083                    /clients/client0/~dmtmp/PARADOX
+
+904                     /clients/client8/~dmtmp
+
+904                     /clients/client2/~dmtmp
+
+904                     /clients/client6/~dmtmp
+
+904                     /clients/client5/~dmtmp
+
+904                     /clients/client9/~dmtmp
+
+812                     /clients/client1/~dmtmp
+
+812                     /clients/client7/~dmtmp
+
+800                     /clients/client4/~dmtmp</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Viewing List of Read Performance on each Brick</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can view the read throughput of files on each brick. If brick name
+is not specified, then the metrics of all the bricks belonging to that
+volume will be displayed. The output will be the read throughput.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>       ==========Read throughput file stats========
+
+read         filename                         Time
+through
+put(MBp
+s)
+
+2570.00    /clients/client0/~dmtmp/PWRPNT/      -2011-01-31
+           TRIDOTS.POT                      15:38:36.894610
+2570.00    /clients/client0/~dmtmp/PWRPNT/      -2011-01-31
+           PCBENCHM.PPT                     15:38:39.815310
+2383.00    /clients/client2/~dmtmp/SEED/        -2011-01-31
+           MEDIUM.FIL                       15:52:53.631499
+
+2340.00    /clients/client0/~dmtmp/SEED/        -2011-01-31
+           MEDIUM.FIL                       15:38:36.926198
+
+2299.00   /clients/client0/~dmtmp/SEED/         -2011-01-31
+          LARGE.FIL                         15:38:36.930445
+
+2259.00   /clients/client0/~dmtmp/PARADOX/      -2011-01-31
+          COURSES.X04                       15:38:40.549919
+
+2221.00   /clients/client0/~dmtmp/PARADOX/      -2011-01-31
+          STUDENTS.VAL                      15:52:53.298766
+
+2221.00   /clients/client3/~dmtmp/SEED/         -2011-01-31
+          COURSES.DB                        15:39:11.776780
+
+2184.00   /clients/client3/~dmtmp/SEED/         -2011-01-31
+          MEDIUM.FIL                        15:39:10.251764
+
+2184.00   /clients/client5/~dmtmp/WORD/         -2011-01-31
+          BASEMACH.DOC                      15:39:09.336572</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command will initiate a dd for the specified count and block size
+and measures the corresponding throughput.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View list of read performance on each brick using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume top  read-perf [bs  count ] [brick ] [list-cnt ]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view read performance on brick server:/export/ of
+test-volume, 256 block size of count 1, and list count 10:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume top  read-perf bs 256 count 1 brick list-cnt</code></p>
+</div>
+<div class="paragraph">
+<p><code>Brick: server:/export/dir1 256 bytes (256 B) copied, Throughput: 4.1 MB/s</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>       ==========Read throughput file stats========
+
+read         filename                         Time
+through
+put(MBp
+s)
+
+2912.00   /clients/client0/~dmtmp/PWRPNT/    -2011-01-31
+           TRIDOTS.POT                   15:38:36.896486
+
+2570.00   /clients/client0/~dmtmp/PWRPNT/    -2011-01-31
+           PCBENCHM.PPT                  15:38:39.815310
+
+2383.00   /clients/client2/~dmtmp/SEED/      -2011-01-31
+           MEDIUM.FIL                    15:52:53.631499
+
+2340.00   /clients/client0/~dmtmp/SEED/      -2011-01-31
+           MEDIUM.FIL                    15:38:36.926198
+
+2299.00   /clients/client0/~dmtmp/SEED/      -2011-01-31
+           LARGE.FIL                     15:38:36.930445
+
+2259.00  /clients/client0/~dmtmp/PARADOX/    -2011-01-31
+          COURSES.X04                    15:38:40.549919
+
+2221.00  /clients/client9/~dmtmp/PARADOX/    -2011-01-31
+          STUDENTS.VAL                   15:52:53.298766
+
+2221.00  /clients/client8/~dmtmp/PARADOX/    -2011-01-31
+         COURSES.DB                      15:39:11.776780
+
+2184.00  /clients/client3/~dmtmp/SEED/       -2011-01-31
+          MEDIUM.FIL                     15:39:10.251764
+
+2184.00  /clients/client5/~dmtmp/WORD/       -2011-01-31
+         BASEMACH.DOC                    15:39:09.336572</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>###Viewing List of Write Performance on each Brick</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can view list of write throughput of files on each brick. If brick
+name is not specified, then the metrics of all the bricks belonging to
+that volume will be displayed. The output will be the write throughput.</p>
+</div>
+<div class="paragraph">
+<p>This command will initiate a dd for the specified count and block size
+and measures the corresponding throughput. To view list of write
+performance on each brick:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View list of write performance on each brick using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume top  write-perf [bs  count ] [brick ] [list-cnt ]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view write performance on brick server:/export/ of
+test-volume, 256 block size of count 1, and list count 10:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume top  write-perf bs 256 count 1 brick list-cnt</code></p>
+</div>
+<div class="paragraph">
+<p><code>Brick</code>: server:/export/dir1</p>
+</div>
+<div class="paragraph">
+<p><code>256 bytes (256 B) copied, Throughput: 2.8 MB/s</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>       ==========Write throughput file stats========
+
+write                filename                 Time
+throughput
+(MBps)
+
+1170.00    /clients/client0/~dmtmp/SEED/     -2011-01-31
+           SMALL.FIL                     15:39:09.171494
+
+1008.00    /clients/client6/~dmtmp/SEED/     -2011-01-31
+           LARGE.FIL                      15:39:09.73189
+
+949.00    /clients/client0/~dmtmp/SEED/      -2011-01-31
+          MEDIUM.FIL                     15:38:36.927426
+
+936.00   /clients/client0/~dmtmp/SEED/       -2011-01-31
+         LARGE.FIL                        15:38:36.933177
+897.00   /clients/client5/~dmtmp/SEED/       -2011-01-31
+         MEDIUM.FIL                       15:39:09.33628
+
+897.00   /clients/client6/~dmtmp/SEED/       -2011-01-31
+         MEDIUM.FIL                       15:39:09.27713
+
+885.00   /clients/client0/~dmtmp/SEED/       -2011-01-31
+          SMALL.FIL                      15:38:36.924271
+
+528.00   /clients/client5/~dmtmp/SEED/       -2011-01-31
+         LARGE.FIL                        15:39:09.81893
+
+516.00   /clients/client6/~dmtmp/ACCESS/    -2011-01-31
+         FASTENER.MDB                    15:39:01.797317</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="displaying-volume-information"><a class="anchor" href="#displaying-volume-information"></a>Displaying Volume Information</h3>
+<div class="paragraph">
+<p>You can display information about a specific volume, or all volumes, as
+needed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Display information about a specific volume using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume info \</code>`VOLNAME`</p>
+</div>
+<div class="paragraph">
+<p>For example, to display information about test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume info test-volume
+Volume Name: test-volume
+Type: Distribute
+Status: Created
+Number of Bricks: 4
+Bricks:
+Brick1: server1:/exp1
+Brick2: server2:/exp2
+Brick3: server3:/exp3
+Brick4: server4:/exp4</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display information about all volumes using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume info all</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume info all
+
+Volume Name: test-volume
+Type: Distribute
+Status: Created
+Number of Bricks: 4
+Bricks:
+Brick1: server1:/exp1
+Brick2: server2:/exp2
+Brick3: server3:/exp3
+Brick4: server4:/exp4
+
+Volume Name: mirror
+Type: Distributed-Replicate
+Status: Started
+Number of Bricks: 2 X 2 = 4
+Bricks:
+Brick1: server1:/brick1
+Brick2: server2:/brick2
+Brick3: server3:/brick3
+Brick4: server4:/brick4
+
+Volume Name: Vol
+Type: Distribute
+Status: Started
+Number of Bricks: 1
+Bricks:
+Brick: server:/brick6</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="performing-statedump-on-a-volume"><a class="anchor" href="#performing-statedump-on-a-volume"></a>Performing Statedump on a Volume</h3>
+<div class="paragraph">
+<p>Statedump is a mechanism through which you can get details of all
+internal variables and state of the glusterfs process at the time of
+issuing the command.You can perform statedumps of the brick processes
+and nfs server process of a volume using the statedump command. The
+following options can be used to determine what information is to be
+dumped:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>mem</strong> - Dumps the memory usage and memory pool details of the bricks.</p>
+</li>
+<li>
+<p><strong>iobuf</strong> - Dumps iobuf details of the bricks.</p>
+</li>
+<li>
+<p><strong>priv</strong> - Dumps private information of loaded translators.</p>
+</li>
+<li>
+<p><strong>callpool</strong> - Dumps the pending calls of the volume.</p>
+</li>
+<li>
+<p><strong>fd</strong> - Dumps the open fd tables of the volume.</p>
+</li>
+<li>
+<p><strong>inode</strong> - Dumps the inode tables of the volume.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To display volume statedump</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Display statedump of a volume or NFS server using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume statedump  [nfs] [all|mem|iobuf|callpool|priv|fd|inode]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to display statedump of test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume statedump test-volume
+Volume statedump successful</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The statedump files are created on the brick servers in the`/tmp`
+directory or in the directory set using <code>server.statedump-path</code> volume
+option. The naming convention of the dump file is
+<code>&lt;brick-path&gt;.&lt;brick-pid&gt;.dump</code>.</p>
+</div>
+</li>
+<li>
+<p>By defult, the output of the statedump is stored at
+<code>/tmp/&lt;brickname.PID.dump&gt;</code> file on that particular server. Change the
+directory of the statedump file using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume set  server.statedump-path</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to change the location of the statedump file of
+test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume set test-volume server.statedump-path /usr/local/var/log/glusterfs/dumps/
+Set volume successful</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can view the changed path of the statedump file using the following
+command:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume info</code></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="displaying-volume-status"><a class="anchor" href="#displaying-volume-status"></a>Displaying Volume Status</h3>
+<div class="paragraph">
+<p>You can display the status information about a specific volume, brick or
+all volumes, as needed. Status information can be used to understand the
+current status of the brick, nfs processes, and overall file system.
+Status information can also be used to monitor and debug the volume
+information. You can view status of the volume along with the following
+details:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>detail</strong> - Displays additional information about the bricks.</p>
+</li>
+<li>
+<p><strong>clients</strong> - Displays the list of clients connected to the volume.</p>
+</li>
+<li>
+<p><strong>mem</strong> - Displays the memory usage and memory pool details of the
+bricks.</p>
+</li>
+<li>
+<p><strong>inode</strong> - Displays the inode tables of the volume.</p>
+</li>
+<li>
+<p><strong>fd</strong> - Displays the open fd (file descriptors) tables of the volume.</p>
+</li>
+<li>
+<p><strong>callpool</strong> - Displays the pending calls of the volume.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To display volume status</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Display information about a specific volume using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume status [all| []] [detail|clients|mem|inode|fd|callpool]</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to display information about test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume status test-volume
+STATUS OF VOLUME: test-volume
+BRICK                           PORT   ONLINE   PID
+--------------------------------------------------------
+arch:/export/1                  24009   Y       22445
+--------------------------------------------------------
+arch:/export/2                  24010   Y       22450</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display information about all volumes using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume status all</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume status all
+STATUS OF VOLUME: volume-test
+BRICK                           PORT   ONLINE   PID
+--------------------------------------------------------
+arch:/export/4                  24010   Y       22455
+
+STATUS OF VOLUME: test-volume
+BRICK                           PORT   ONLINE   PID
+--------------------------------------------------------
+arch:/export/1                  24009   Y       22445
+--------------------------------------------------------
+arch:/export/2                  24010   Y       22450</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display additional information about the bricks using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume status  detail</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to display additional information about the bricks of
+test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume status test-volume details
+STATUS OF VOLUME: test-volume
+-------------------------------------------
+Brick                : arch:/export/1
+Port                 : 24009
+Online               : Y
+Pid                  : 16977
+File System          : rootfs
+Device               : rootfs
+Mount Options        : rw
+Disk Space Free      : 13.8GB
+Total Disk Space     : 46.5GB
+Inode Size           : N/A
+Inode Count          : N/A
+Free Inodes          : N/A
+
+Number of Bricks: 1
+Bricks:
+Brick: server:/brick6</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display the list of clients accessing the volumes using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume status  clients</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to display the list of clients connected to test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume status test-volume clients
+Brick : arch:/export/1
+Clients connected : 2
+Hostname          Bytes Read   BytesWritten
+--------          ---------    ------------
+127.0.0.1:1013    776          676
+127.0.0.1:1012    50440        51200</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display the memory usage and memory pool details of the bricks using
+the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume status  mem</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to display the memory usage and memory pool details of the
+bricks of test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Memory status for volume : test-volume
+----------------------------------------------
+Brick : arch:/export/1
+Mallinfo
+--------
+Arena    : 434176
+Ordblks  : 2
+Smblks   : 0
+Hblks    : 12
+Hblkhd   : 40861696
+Usmblks  : 0
+Fsmblks  : 0
+Uordblks : 332416
+Fordblks : 101760
+Keepcost : 100400
+
+Mempool Stats
+-------------
+Name                               HotCount ColdCount PaddedSizeof AllocCount MaxAlloc
+----                               -------- --------- ------------ ---------- --------
+test-volume-server:fd_t                0     16384           92         57        5
+test-volume-server:dentry_t           59       965           84         59       59
+test-volume-server:inode_t            60       964          148         60       60
+test-volume-server:rpcsvc_request_t    0       525         6372        351        2
+glusterfs:struct saved_frame           0      4096          124          2        2
+glusterfs:struct rpc_req               0      4096         2236          2        2
+glusterfs:rpcsvc_request_t             1       524         6372          2        1
+glusterfs:call_stub_t                  0      1024         1220        288        1
+glusterfs:call_stack_t                 0      8192         2084        290        2
+glusterfs:call_frame_t                 0     16384          172       1728        6</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display the inode tables of the volume using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume status  inode</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to display the inode tables of the test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume status test-volume inode
+inode tables for volume test-volume
+----------------------------------------------
+Brick : arch:/export/1
+Active inodes:
+GFID                                            Lookups            Ref   IA type
+----                                            -------            ---   -------
+6f3fe173-e07a-4209-abb6-484091d75499                  1              9         2
+370d35d7-657e-44dc-bac4-d6dd800ec3d3                  1              1         2
+
+LRU inodes:
+GFID                                            Lookups            Ref   IA type
+----                                            -------            ---   -------
+80f98abe-cdcf-4c1d-b917-ae564cf55763                  1              0         1
+3a58973d-d549-4ea6-9977-9aa218f233de                  1              0         1
+2ce0197d-87a9-451b-9094-9baa38121155                  1              0         2</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display the open fd tables of the volume using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume status  fd</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to display the open fd tables of the test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume status test-volume fd
+
+FD tables for volume test-volume
+----------------------------------------------
+Brick : arch:/export/1
+Connection 1:
+RefCount = 0  MaxFDs = 128  FirstFree = 4
+FD Entry            PID                 RefCount            Flags
+--------            ---                 --------            -----
+0                   26311               1                   2
+1                   26310               3                   2
+2                   26310               1                   2
+3                   26311               3                   2
+
+Connection 2:
+RefCount = 0  MaxFDs = 128  FirstFree = 0
+No open fds
+
+Connection 3:
+RefCount = 0  MaxFDs = 128  FirstFree = 0
+No open fds</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Display the pending calls of the volume using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume status  callpool</code></p>
+</div>
+<div class="paragraph">
+<p>Each call has a call stack containing call frames.</p>
+</div>
+<div class="paragraph">
+<p>For example, to display the pending calls of test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume status test-volume
+
+Pending calls for volume test-volume
+----------------------------------------------
+Brick : arch:/export/1
+Pending calls: 2
+Call Stack1
+ UID    : 0
+ GID    : 0
+ PID    : 26338
+ Unique : 192138
+ Frames : 7
+ Frame 1
+  Ref Count   = 1
+  Translator  = test-volume-server
+  Completed   = No
+ Frame 2
+  Ref Count   = 0
+  Translator  = test-volume-posix
+  Completed   = No
+  Parent      = test-volume-access-control
+  Wind From   = default_fsync
+  Wind To     = FIRST_CHILD(this)-&gt;fops-&gt;fsync
+ Frame 3
+  Ref Count   = 1
+  Translator  = test-volume-access-control
+  Completed   = No
+  Parent      = repl-locks
+  Wind From   = default_fsync
+  Wind To     = FIRST_CHILD(this)-&gt;fops-&gt;fsync
+ Frame 4
+  Ref Count   = 1
+  Translator  = test-volume-locks
+  Completed   = No
+  Parent      = test-volume-io-threads
+  Wind From   = iot_fsync_wrapper
+  Wind To     = FIRST_CHILD (this)-&gt;fops-&gt;fsync
+ Frame 5
+  Ref Count   = 1
+  Translator  = test-volume-io-threads
+  Completed   = No
+  Parent      = test-volume-marker
+  Wind From   = default_fsync
+  Wind To     = FIRST_CHILD(this)-&gt;fops-&gt;fsync
+ Frame 6
+  Ref Count   = 1
+  Translator  = test-volume-marker
+  Completed   = No
+  Parent      = /export/1
+  Wind From   = io_stats_fsync
+  Wind To     = FIRST_CHILD(this)-&gt;fops-&gt;fsync
+ Frame 7
+  Ref Count   = 1
+  Translator  = /export/1
+  Completed   = No
+  Parent      = test-volume-server
+  Wind From   = server_fsync_resume
+  Wind To     = bound_xl-&gt;fops-&gt;fsync</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

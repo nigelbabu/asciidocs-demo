@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Managing Volumes</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Managing Volumes
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class=" active" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Managing GlusterFS Volumes</h2>
+        </div>
+        <div class="sect1">
+<h2 id="managing-glusterfs-volumes"><a class="anchor" href="#managing-glusterfs-volumes"></a>Managing GlusterFS Volumes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section describes how to perform common GlusterFS management
+operations, including the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#tuning-options">Tuning Volume Options</a></p>
+</li>
+<li>
+<p><a href="#configuring-transport-types-for-a-volume">Configuring Transport
+Types for a Volume</a></p>
+</li>
+<li>
+<p><a href="#expanding-volumes">Expanding Volumes</a></p>
+</li>
+<li>
+<p><a href="#shrinking-volumes">Shrinking Volumes</a></p>
+</li>
+<li>
+<p><a href="#replace-brick">Replacing Bricks</a></p>
+</li>
+<li>
+<p><a href="#migrating-volumes">Migrating Volumes</a></p>
+</li>
+<li>
+<p><a href="#rebalancing-volumes">Rebalancing Volumes</a></p>
+</li>
+<li>
+<p><a href="#stopping-volumes">Stopping Volumes</a></p>
+</li>
+<li>
+<p><a href="#deleting-volumes">Deleting Volumes</a></p>
+</li>
+<li>
+<p><a href="#triggering-self-heal-on-replicate">Triggering Self-Heal on
+Replicate</a></p>
+</li>
+<li>
+<p><a href="#non-uniform-file-allocation">Non Uniform File Allocation(NUFA)</a></p>
+<div class="literalblock">
+<div class="content">
+<pre>##Tuning Volume Options</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can tune volume options, as needed, while the cluster is online and
+available.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>It is recommended that you to set server.allow-insecure option to ON if
+there are too many bricks in each volume or if there are too many
+services which have already utilized all the privileged ports in the
+system. Turning this option ON allows ports to accept/reject messages
+from insecure ports. So, use this option only if your deployment
+requires it.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Tune volume options using the following command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume set</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example, to specify the performance cache size for test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume set test-volume performance.cache-size 256MB
+Set volume successful</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following table lists the Volume options along with its description
+and default value:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>The default options given here are subject to modification at any given
+time and may not be the same for all versions.</p>
+</div>
+</blockquote>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 22%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Available Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">auth.allow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP addresses of the clients which should be allowed to
+access the volume.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* (allow all)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valid IP address which includes wild
+card patterns including <strong>, such as 192.168.1.</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">auth.reject</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP addresses of the clients which should be denied to
+access the volume.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NONE (reject none)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valid IP address which includes
+wild card patterns including <strong>, such as 192.168.2.</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">client.grace-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the duration for the lock state to be
+maintained on the client after a network disconnection.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 - 1800
+secs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cluster.self-heal-window-size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the maximum number of blocks
+per file on which self-heal would happen simultaneously.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0 - 1025
+blocks</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cluster.data-self-heal-algorithm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the type of self-heal. If
+you set the option as "full", the entire file is copied from source to
+destinations. If the option is set to "diff" the file blocks that are
+not in sync are copied to destinations. Reset uses a heuristic model. If
+the file does not exist on one of the subvolumes, or a zero-byte file
+exists (created by entry self-heal) the entire content has to be copied
+anyway, so there is no benefit from using the "diff" algorithm. If the
+file size is about the same as page size, the entire file can be read
+and written with a few operations, which will be faster than "diff"
+which has to read checksums and then read and write.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">reset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">full/diff/reset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cluster.min-free-disk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the percentage of disk space that must
+be kept free. Might be useful for non-uniform bricks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage of
+required minimum free disk space</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cluster.stripe-block-size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the size of the stripe unit that
+will be read from or written to.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128 KB (for all files)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size in bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cluster.self-heal-daemon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allows you to turn-off proactive self-heal on
+replicated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cluster.ensure-durability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This option makes sure the data/metadata is
+durable across abrupt shutdown of the brick.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">diagnostics.brick-log-level</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes the log-level of the bricks.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INFO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEBUG/WARNING/ERROR/CRITICAL/NONE/TRACE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">diagnostics.client-log-level</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes the log-level of the clients.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INFO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEBUG/WARNING/ERROR/CRITICAL/NONE/TRACE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">diagnostics.latency-measurement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Statistics related to the latency of
+each operation would be tracked.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">diagnostics.dump-fd-stats</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Statistics related to file-operations would
+be tracked.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">features.read-only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables you to mount the entire volume as read-only
+for all the clients (including NFS clients) accessing it.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">features.lock-heal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables self-healing of locks when the network
+disconnects.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">features.quota-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For performance reasons, quota caches the
+directory sizes on client. You can set timeout indicating the maximum
+duration of directory sizes in cache, from the time they are populated,
+during which they are considered valid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0 - 3600 secs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">geo-replication.indexing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this option to automatically sync the
+changes in the filesystem from Master to Slave.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">network.frame-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The time frame after which the operation has to
+be declared as dead, if the server does not respond for a particular
+operation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1800 (30 mins)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1800 secs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">network.ping-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The time duration for which the client waits to
+check if the server is responsive. When a ping timeout happens, there is
+a network disconnect between the client and server. All resources held
+by server on behalf of the client get cleaned up. When a reconnection
+happens, all resources will need to be re-acquired before the client can
+resume its operations on the server. Additionally, the locks will be
+acquired and the lock tables updated. This reconnect is a very expensive
+operation and should be avoided.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">42 Secs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">42 Secs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.enable-ino32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For 32-bit nfs clients or applications that do not
+support 64-bit inode numbers or large files, use this option from the
+CLI to make Gluster NFS return 32-bit inode numbers instead of 64-bit
+inode numbers.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.volume-access</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the access type for the specified sub-volume.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">read-write</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">read-write/read-only</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.trusted-write</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If there is an UNSTABLE write from the client,
+STABLE flag will be returned to force the client to not send a COMMIT
+request. In some environments, combined with a replicated GlusterFS
+setup, this option can improve write performance. This flag allows users
+to trust Gluster replication logic to sync data to the disks and recover
+when required. COMMIT requests if received will be handled in a default
+manner by fsyncing. STABLE writes are still handled in a sync manner.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.trusted-sync</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All writes and COMMIT requests are treated as async.
+This implies that no write requests are guaranteed to be on server disks
+when the write reply is received at the NFS client. Trusted sync
+includes trusted-write behavior.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.export-dir</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This option can be used to export specified comma
+separated subdirectories in the volume. The path must be an absolute
+path. Along with path allowed list of IPs/hostname can be associated
+with each subdirectory. If provided connection will allowed only from
+these IPs. Format: &lt;dir&gt;[(hostspec[hostspec&#8230;&#8203;])][,&#8230;&#8203;]. Where hostspec
+can be an IP address, hostname or an IP range in CIDR notation.
+<strong>Note</strong>: Care must be taken while configuring this option as invalid
+entries and/or unreachable DNS servers can introduce unwanted delay in
+all the mount calls.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No sub directory exported.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Absolute path with
+allowed list of IP/hostname</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.export-volumes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable/Disable exporting entire volumes, instead if
+used in conjunction with nfs3.export-dir, can allow setting up only
+subdirectories as exports.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.rpc-auth-unix</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable/Disable the AUTH_UNIX authentication type.
+This option is enabled by default for better interoperability. However,
+you can disable it if required.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.rpc-auth-null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable/Disable the AUTH_NULL authentication type. It
+is not recommended to change the default value for this option.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.rpc-auth-allow&lt;IP- Addresses&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow a comma separated list of
+addresses and/or hostnames to connect to the server. By default, all
+clients are disallowed. This allows you to define a general rule for all
+exported volumes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reject All</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP address or Host name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.rpc-auth-reject&lt;IP- Addresses&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reject a comma separated list of
+addresses and/or hostnames from connecting to the server. By default,
+all connections are disallowed. This allows you to define a general rule
+for all exported volumes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reject All</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP address or Host name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.ports-insecure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow client connections from unprivileged ports.
+By default only privileged ports are allowed. This is a global setting
+in case insecure ports are to be enabled for all exports using a single
+option.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.addr-namelookup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turn-off name lookup for incoming client
+connections using this option. In some setups, the name server can take
+too long to reply to DNS queries resulting in timeouts of mount
+requests. Use this option to turn off name lookups during address
+authentication. Note, turning this off will prevent you from using
+hostnames in rpc-auth.addr.* filters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.register-with-portmap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For systems that need to run multiple NFS
+servers, you need to prevent more than one from registering with portmap
+service. Use this option to turn off portmap registration for Gluster
+NFS.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.port &lt;PORT- NUMBER&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this option on systems that need Gluster
+NFS to be associated with a non-default port number.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">38465- 38467</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nfs.disable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turn-off volume being exported by NFS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">performance.write-behind-window-size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Size of the per-file write-behind
+buffer.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1MB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Write-behind cache size</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">performance.io-thread-count</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of threads in IO threads
+translator.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0-65</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">performance.flush-behind</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If this option is set ON, instructs
+write-behind translator to perform flush in background, by returning
+success (or any errors, if any of previous writes were failed) to
+application even before flush is sent to backend filesystem.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">performance.cache-max-file-size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the maximum file size cached by
+the io-cache translator. Can use the normal size descriptors of KB, MB,
+GB,TB or PB (for example, 6GB). Maximum size uint64.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 ^ 64 -1 bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size in bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">performance.cache-min-file-size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the minimum file size cached by
+the io-cache translator. Values same as "max" above</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size in bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">performance.cache-refresh-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The cached data for a file will be
+retained till 'cache-refresh-timeout' seconds, after which data
+re-validation is performed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0-61</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">performance.cache-size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Size of the read cache.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32 MB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size in bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">server.allow-insecure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow client connections from unprivileged
+ports. By default only privileged ports are allowed. This is a global
+setting in case insecure ports are to be enabled for all exports using a
+single option.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On/Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">server.grace-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the duration for the lock state to be
+maintained on the server after a network disconnection.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 - 1800
+secs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">server.statedump-path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Location of the state dump file.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tmp directory
+of the brick</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New directory path</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">storage.health-check-interval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of seconds between health-checks
+done on the filesystem that is used for the brick(s). Defaults to 30
+seconds, set to 0 to disable.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tmp directory of the brick</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New directory
+path</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>You can view the changed volume options using command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> # gluster volume info</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Configuring Transport Types for a Volume</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A volume can support one or more transport types for communication
+between clients and brick processes. There are three types of supported
+transport, which are tcp, rdma, and tcp,rdma.</p>
+</div>
+<div class="paragraph">
+<p>To change the supported transport types of a volume, follow the
+procedure:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Unmount the volume on all the clients using the following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># umount mount-point</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Stop the volumes using the following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume stop volname</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Change the transport type. For example, to enable both tcp and rdma
+execute the followimg command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume set volname config.transport tcp,rdma OR tcp OR rdma</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Mount the volume on all the clients. For example, to mount using
+rdma transport, use the following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># mount -t glusterfs -o transport=rdma server1:/test-volume /mnt/glusterfs</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Expanding Volumes</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can expand volumes, as needed, while the cluster is online and
+available. For example, you might want to add a brick to a distributed
+volume, thereby increasing the distribution and adding to the capacity
+of the GlusterFS volume.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, you might want to add a group of bricks to a distributed
+replicated volume, increasing the capacity of the GlusterFS volume.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>When expanding distributed replicated and distributed striped volumes,
+you need to add a number of bricks that is a multiple of the replica or
+stripe count. For example, to expand a distributed replicated volume
+with a replica count of 2, you need to add bricks in multiples of 2
+(such as 4, 6, 8, etc.).</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>To expand a volume</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the first server in the cluster, probe the server to which you
+want to add the new brick using the following command:</p>
+<div class="paragraph">
+<p><code># gluster peer probe</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster peer probe server4
+Probe successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the brick using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume add-brick</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume add-brick test-volume server4:/exp4
+Add Brick successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check the volume information using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume info</code></p>
+</div>
+<div class="paragraph">
+<p>The command displays information similar to the following:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Volume Name: test-volume
+Type: Distribute
+Status: Started
+Number of Bricks: 4
+Bricks:
+Brick1: server1:/exp1
+Brick2: server2:/exp2
+Brick3: server3:/exp3
+Brick4: server4:/exp4</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Rebalance the volume to ensure that all files are distributed to the
+new brick.</p>
+<div class="paragraph">
+<p>You can use the rebalance command as described in
+<a href="#rebalancing-volumes">Rebalancing Volumes</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Shrinking Volumes</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can shrink volumes, as needed, while the cluster is online and
+available. For example, you might need to remove a brick that has become
+inaccessible in a distributed volume due to hardware or network failure.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>Data residing on the brick that you are removing will no longer be
+accessible at the Gluster mount point. Note however that only the
+configuration information is removed - you can continue to access the
+data directly from the brick, as necessary.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>When shrinking distributed replicated and distributed striped volumes,
+you need to remove a number of bricks that is a multiple of the replica
+or stripe count. For example, to shrink a distributed striped volume
+with a stripe count of 2, you need to remove bricks in multiples of 2
+(such as 4, 6, 8, etc.). In addition, the bricks you are trying to
+remove must be from the same sub-volume (the same replica or stripe
+set).</p>
+</div>
+<div class="paragraph">
+<p><strong>To shrink a volume</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Remove the brick using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume remove-brick</code> <code>start</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to remove server2:/exp2:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume remove-brick test-volume server2:/exp2 force
+
+Removing brick(s) can result in data loss. Do you want to Continue? (y/n)</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter "y" to confirm the operation. The command displays the
+following message indicating that the remove brick operation is
+successfully started:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Remove Brick successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>(Optional) View the status of the remove brick operation using the
+following command:</p>
+<div class="paragraph">
+<p><code># gluster volume remove-brick  status</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view the status of remove brick operation on
+server2:/exp2 brick:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume remove-brick test-volume server2:/exp2 status
+                                Node  Rebalanced-files  size  scanned       status
+                           ---------  ----------------  ----  -------  -----------
+617c923e-6450-4065-8e33-865e28d9428f               34   340      162   in progress</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check the volume information using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume info</code></p>
+</div>
+<div class="paragraph">
+<p>The command displays information similar to the following:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume info
+Volume Name: test-volume
+Type: Distribute
+Status: Started
+Number of Bricks: 3
+Bricks:
+Brick1: server1:/exp1
+Brick3: server3:/exp3
+Brick4: server4:/exp4</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Rebalance the volume to ensure that all files are distributed to the
+new brick.</p>
+<div class="paragraph">
+<p>You can use the rebalance command as described in
+<a href="#rebalancing-volumes">Rebalancing Volumes</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Replace faulty brick</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Replacing a brick in <em>pure</em> distribute volume</strong></p>
+</div>
+<div class="paragraph">
+<p>To replace a brick on a distribute only volume, user needs to remove the
+brick using remove-brick. Then add a new-brick and rebalance the
+cluster.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Replacing a brick using 'replace-brick' command in gluster is
+supported only for distributed-replicate or <em>pure</em> replicate volumes.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Steps to remove brick Server1:/home/gfs/r2_1 and add
+Server1:/home/gfs/r2_2:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Here is the initial volume configuration:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Volume Name: r2
+Type: Distribute
+Volume ID: 25b4e313-7b36-445d-b524-c3daebb91188
+Status: Started
+Number of Bricks: 2
+Transport-type: tcp
+Bricks:
+Brick1: Server1:/home/gfs/r2_0
+Brick2: Server1:/home/gfs/r2_1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Here are the files that are present on the mount:</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ ls
+1  10  2  3  4  5  6  7  8  9</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the new brick - Server1:/home/gfs/r2_2 now:</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume add-brick r2 Server1:/home/gfs/r2_2
+volume add-brick: success</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Start remove-brick using the following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume remove-brick r2 Server1:/home/gfs/r2_1 start
+volume remove-brick start: success
+ID: fba0a488-21a4-42b7-8a41-b27ebaa8e5f4</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Wait until remove-brick is completed. Once remove-brick is completed
+it shows the following output:</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume remove-brick r2 Server1:/home/gfs/r2_1 status
+                                Node Rebalanced-files          size       scanned      failures       skipped               status   run time in secs
+                           ---------      -----------   -----------   -----------   -----------   -----------         ------------     --------------
+                           localhost                5       20Bytes            15             0             0            completed               0.00</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Now we can safely remove the old brick, so commit the changes:</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume remove-brick r2 Server1:/home/gfs/r2_1 commit
+Removing brick(s) can result in data loss. Do you want to Continue? (y/n) y
+volume remove-brick commit: success</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Here is how the volume configuration will be after the remove-brick.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Volume Name: r2
+Type: Distribute
+Volume ID: 25b4e313-7b36-445d-b524-c3daebb91188
+Status: Started
+Number of Bricks: 2
+Transport-type: tcp
+Bricks:
+Brick1: Server1:/home/gfs/r2_0
+Brick2: Server1:/home/gfs/r2_2</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check the contents of the mount:</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ ls
+1  10  2  3  4  5  6  7  8  9</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Replacing brick in Replicate/Distributed Replicate volumes</strong></p>
+</div>
+<div class="paragraph">
+<p>This section of the document contains how brick:
+<code>Server1:/home/gfs/r2_0</code> is replaced with brick:
+<code>Server1:/home/gfs/r2_5</code> in volume <code>r2</code> with replica count <code>2</code>.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    Volume Name: r2
+    Type: Distributed-Replicate
+    Volume ID: 24a0437a-daa0-4044-8acf-7aa82efd76fd
+    Status: Started
+    Number of Bricks: 2 x 2 = 4
+    Transport-type: tcp
+    Bricks:
+    Brick1: Server1:/home/gfs/r2_0
+    Brick2: Server2:/home/gfs/r2_1
+    Brick3: Server1:/home/gfs/r2_2
+    Brick4: Server2:/home/gfs/r2_3</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure there is no data in the new brick Server1:/home/gfs/r2_5</p>
+</li>
+<li>
+<p>Check that all the bricks are running. It is okay if the brick that
+is going to be replaced is down.</p>
+</li>
+<li>
+<p>Bring the brick that is going to be replaced down if not already.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Get the pid of the brick by executing 'gluster volume status'</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume status
+Status of volume: r2
+Gluster process                        Port    Online    Pid
+------------------------------------------------------------------------------
+Brick Server1:/home/gfs/r2_0            49152    Y    5342
+Brick Server2:/home/gfs/r2_1            49153    Y    5354
+Brick Server1:/home/gfs/r2_2            49154    Y    5365
+Brick Server2:/home/gfs/r2_3            49155    Y    5376</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Login to the machine where the brick is running and kill the brick.</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ kill -15 5342</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Confirm that the brick is not running anymore and the other bricks are
+running fine.</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume status
+Status of volume: r2
+Gluster process                        Port    Online    Pid
+------------------------------------------------------------------------------
+Brick Server1:/home/gfs/r2_0            N/A    N    5342 &lt;&lt;---- brick     is not running, others are running fine.
+Brick Server2:/home/gfs/r2_1            49153    Y    5354
+Brick Server1:/home/gfs/r2_2            49154    Y    5365
+Brick Server2:/home/gfs/r2_3            49155    Y    5376</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Using the gluster volume fuse mount (In this example: <code>/mnt/r2</code>) set
+up metadata so that data will be synced to new brick (In this case it is
+from <code>Server1:/home/gfs/r2_1</code> to <code>Server1:/home/gfs/r2_5</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Create a directory on the mount point that doesn&#8217;t already exist. Then
+delete that directory, do the same for metadata changelog by doing
+setfattr. This operation marks the pending changelog which will tell
+self-heal damon/mounts to perform self-heal from /home/gfs/r2_1 to
+/home/gfs/r2_5.</p>
+<div class="literalblock">
+<div class="content">
+<pre>mkdir /mnt/r2/&lt;name-of-nonexistent-dir&gt;
+rmdir /mnt/r2/&lt;name-of-nonexistent-dir&gt;
+setfattr -n trusted.non-existent-key -v abc /mnt/r2
+setfattr -x trusted.non-existent-key  /mnt/r2</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check that there are pending xattrs on the replica of the brick that
+is being replaced:</p>
+<div class="literalblock">
+<div class="content">
+<pre>getfattr -d -m. -e hex /home/gfs/r2_1
+# file: home/gfs/r2_1
+security.selinux=0x756e636f6e66696e65645f753a6f626a6563745f723a66696c655f743a733000
+trusted.afr.r2-client-0=0x000000000000000300000002 &lt;&lt;---- xattrs are marked     from source brick Server2:/home/gfs/r2_1
+trusted.afr.r2-client-1=0x000000000000000000000000
+trusted.gfid=0x00000000000000000000000000000001
+trusted.glusterfs.dht=0x0000000100000000000000007ffffffe
+trusted.glusterfs.volume-id=0xde822e25ebd049ea83bfaa3c4be2b440</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Volume heal info will show that '/' needs healing.(There could be
+more entries based on the work load. But '/' must exist)</p>
+<div class="literalblock">
+<div class="content">
+<pre>    ⚡ gluster volume heal r2 info
+    Brick Server1:/home/gfs/r2_0
+    Status: Transport endpoint is not connected
+
+    Brick Server2:/home/gfs/r2_1
+    /
+    Number of entries: 1
+
+    Brick Server1:/home/gfs/r2_2
+    Number of entries: 0
+
+    Brick Server2:/home/gfs/r2_3
+    Number of entries: 0</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Replace the brick with 'commit force' option. Please note that other
+variants of replace-brick command are not supported.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Execute replace-brick command</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume replace-brick r2 Server1:/home/gfs/r2_0 Server1:/home/gfs/r2_5 commit force
+volume replace-brick: success: replace-brick commit successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check that the new brick is now online</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ gluster volume status
+Status of volume: r2
+Gluster process                        Port    Online    Pid
+------------------------------------------------------------------------------
+Brick Server1:/home/gfs/r2_5            49156    Y    5731 &lt;&lt;&lt;---- new     brick is online
+Brick Server2:/home/gfs/r2_1            49153    Y    5354
+Brick Server1:/home/gfs/r2_2            49154    Y    5365
+Brick Server2:/home/gfs/r2_3            49155    Y    5376</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Users can track the progress of self-heal using: "gluster volume heal
+info". Once self-heal completes the changelogs will be removed.</p>
+<div class="literalblock">
+<div class="content">
+<pre>⚡ getfattr -d -m. -e hex /home/gfs/r2_1
+getfattr: Removing leading '/' from absolute path names
+# file: home/gfs/r2_1
+security.selinux=0x756e636f6e66696e65645f753a6f626a6563745f723a66696c655f743a733000
+trusted.afr.r2-client-0=0x000000000000000000000000 &lt;&lt;---- Pending changelogs are cleared.
+trusted.afr.r2-client-1=0x000000000000000000000000
+trusted.gfid=0x00000000000000000000000000000001
+trusted.glusterfs.dht=0x0000000100000000000000007ffffffe
+trusted.glusterfs.volume-id=0xde822e25ebd049ea83bfaa3c4be2b440</pre>
+</div>
+</div>
+</li>
+<li>
+<p>gluster volume heal info will show that no heal is required. ⚡ gluster
+volume heal r2 info Brick Server1:/home/gfs/r2_5 Number of entries: 0</p>
+<div class="literalblock">
+<div class="content">
+<pre>Brick Server2:/home/gfs/r2_1
+Number of entries: 0
+
+Brick Server1:/home/gfs/r2_2
+Number of entries: 0
+
+Brick Server2:/home/gfs/r2_3
+Number of entries: 0</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Rebalancing Volumes</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>After expanding or shrinking a volume (using the add-brick and
+remove-brick commands respectively), you need to rebalance the data
+among the servers. New directories created after expanding or shrinking
+of the volume will be evenly distributed automatically. For all the
+existing directories, the distribution can be fixed by rebalancing the
+layout and/or data.</p>
+</div>
+<div class="paragraph">
+<p>This section describes how to rebalance GlusterFS volumes in your
+storage environment, using the following common scenarios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Fix Layout</strong> - Fixes the layout changes so that the files can actually
+go to newly added nodes.</p>
+</li>
+<li>
+<p><strong>Fix Layout and Migrate Data</strong> - Rebalances volume by fixing the layout
+changes and migrating the existing data.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="rebalancing-volume-to-fix-layout-changes"><a class="anchor" href="#rebalancing-volume-to-fix-layout-changes"></a>Rebalancing Volume to Fix Layout Changes</h4>
+<div class="paragraph">
+<p>Fixing the layout is necessary because the layout structure is static
+for a given directory. In a scenario where new bricks have been added to
+the existing volume, newly created files in existing directories will
+still be distributed only among the old bricks. The
+`# gluster volume rebalance fix-layout start`command will fix the layout
+information so that the files can also go to newly added nodes. When
+this command is issued, all the file stat information which is already
+cached will get revalidated.</p>
+</div>
+<div class="paragraph">
+<p>As of GlusterFS 3.6, the assignment of files to bricks will take into
+account the sizes of the bricks. For example, a 20TB brick will be
+assigned twice as many files as a 10TB brick. In versions before 3.6,
+the two bricks were treated as equal regardless of size, and would have
+been assigned an equal share of files.</p>
+</div>
+<div class="paragraph">
+<p>A fix-layout rebalance will only fix the layout changes and does not
+migrate data. If you want to migrate the existing data,
+use`# gluster volume rebalance  start` command to rebalance data among
+the servers.</p>
+</div>
+<div class="paragraph">
+<p><strong>To rebalance a volume to fix layout changes</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start the rebalance operation on any one of the server using the
+following command:</p>
+<div class="paragraph">
+<p><code># gluster volume rebalance fix-layout start</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume rebalance test-volume fix-layout start
+Starting rebalance on volume test-volume has been successful</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="rebalancing-volume-to-fix-layout-and-migrate-data"><a class="anchor" href="#rebalancing-volume-to-fix-layout-and-migrate-data"></a>Rebalancing Volume to Fix Layout and Migrate Data</h4>
+<div class="paragraph">
+<p>After expanding or shrinking a volume (using the add-brick and
+remove-brick commands respectively), you need to rebalance the data
+among the servers.</p>
+</div>
+<div class="paragraph">
+<p><strong>To rebalance a volume to fix layout and migrate the existing data</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start the rebalance operation on any one of the server using the
+following command:</p>
+<div class="paragraph">
+<p><code># gluster volume rebalance start</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume rebalance test-volume start
+Starting rebalancing on volume test-volume has been successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Start the migration operation forcefully on any one of the server
+using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume rebalance start force</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume rebalance test-volume start force
+Starting rebalancing on volume test-volume has been successful</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="displaying-status-of-rebalance-operation"><a class="anchor" href="#displaying-status-of-rebalance-operation"></a>Displaying Status of Rebalance Operation</h4>
+<div class="paragraph">
+<p>You can display the status information about rebalance volume operation,
+as needed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Check the status of the rebalance operation, using the following
+command:</p>
+<div class="paragraph">
+<p><code># gluster volume rebalance  status</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume rebalance test-volume status
+                                Node  Rebalanced-files  size  scanned       status
+                           ---------  ----------------  ----  -------  -----------
+617c923e-6450-4065-8e33-865e28d9428f               416  1463      312  in progress</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The time to complete the rebalance operation depends on the number of
+files on the volume along with the corresponding file sizes. Continue
+checking the rebalance status, verifying that the number of files
+rebalanced or total files scanned keeps increasing.</p>
+</div>
+<div class="paragraph">
+<p>For example, running the status command again might display a result
+similar to the following:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume rebalance test-volume status
+                                Node  Rebalanced-files  size  scanned       status
+                           ---------  ----------------  ----  -------  -----------
+617c923e-6450-4065-8e33-865e28d9428f               498  1783      378  in progress</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The rebalance status displays the following when the rebalance is
+complete:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume rebalance test-volume status
+                                Node  Rebalanced-files  size  scanned       status
+                           ---------  ----------------  ----  -------  -----------
+617c923e-6450-4065-8e33-865e28d9428f               502  1873      334   completed</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="stopping-rebalance-operation"><a class="anchor" href="#stopping-rebalance-operation"></a>Stopping Rebalance Operation</h4>
+<div class="paragraph">
+<p>You can stop the rebalance operation, as needed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stop the rebalance operation using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume rebalance  stop</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume rebalance test-volume stop
+                                Node  Rebalanced-files  size  scanned       status
+                           ---------  ----------------  ----  -------  -----------
+617c923e-6450-4065-8e33-865e28d9428f               59   590      244       stopped
+Stopped rebalance process on volume test-volume</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Stopping Volumes</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Stop the volume using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume stop</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to stop test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume stop test-volume
+Stopping volume will make its data inaccessible. Do you want to continue? (y/n)</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter <code>y</code> to confirm the operation. The output of the command
+displays the following:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Stopping volume test-volume has been successful</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Deleting Volumes</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Delete the volume using the following command:</p>
+<div class="paragraph">
+<p><code># gluster volume delete</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to delete test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume delete test-volume
+Deleting volume will erase all information about the volume. Do you want to continue? (y/n)</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter <code>y</code> to confirm the operation. The command displays the
+following:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Deleting volume test-volume has been successful</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Triggering Self-Heal on Replicate</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In replicate module, previously you had to manually trigger a self-heal
+when a brick goes offline and comes back online, to bring all the
+replicas in sync. Now the pro-active self-heal daemon runs in the
+background, diagnoses issues and automatically initiates self-healing
+every 10 minutes on the files which requires<em>healing</em>.</p>
+</div>
+<div class="paragraph">
+<p>You can view the list of files that need <em>healing</em>, the list of files
+which are currently/previously <em>healed</em>, list of files which are in
+split-brain state, and you can manually trigger self-heal on the entire
+volume or only on the files which need <em>healing</em>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Trigger self-heal only on the files which requires <em>healing</em>:</p>
+<div class="paragraph">
+<p><code># gluster volume heal</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to trigger self-heal on files which requires <em>healing</em> of
+test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume heal test-volume
+Heal operation on volume test-volume has been successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Trigger self-heal on all the files of a volume:</p>
+<div class="paragraph">
+<p><code># gluster volume heal full</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to trigger self-heal on all the files of of test-volume:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume heal test-volume full
+Heal operation on volume test-volume has been successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>View the list of files that needs <em>healing</em>:</p>
+<div class="paragraph">
+<p><code># gluster volume heal info</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view the list of files on test-volume that needs
+<em>healing</em>:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume heal test-volume info
+Brick :/gfs/test-volume_0
+Number of entries: 0
+
+Brick :/gfs/test-volume_1
+Number of entries: 101
+/95.txt
+/32.txt
+/66.txt
+/35.txt
+/18.txt
+/26.txt
+/47.txt
+/55.txt
+/85.txt
+...</pre>
+</div>
+</div>
+</li>
+<li>
+<p>View the list of files that are self-healed:</p>
+<div class="paragraph">
+<p><code># gluster volume heal info healed</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view the list of files on test-volume that are
+self-healed:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume heal test-volume info healed
+Brick :/gfs/test-volume_0
+Number of entries: 0
+
+Brick :/gfs/test-volume_1
+Number of entries: 69
+/99.txt
+/93.txt
+/76.txt
+/11.txt
+/27.txt
+/64.txt
+/80.txt
+/19.txt
+/41.txt
+/29.txt
+/37.txt
+/46.txt
+...</pre>
+</div>
+</div>
+</li>
+<li>
+<p>View the list of files of a particular volume on which the self-heal
+failed:</p>
+<div class="paragraph">
+<p><code># gluster volume heal info failed</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view the list of files of test-volume that are not
+self-healed:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume heal test-volume info failed
+Brick :/gfs/test-volume_0
+Number of entries: 0
+
+Brick server2:/gfs/test-volume_3
+Number of entries: 72
+/90.txt
+/95.txt
+/77.txt
+/71.txt
+/87.txt
+/24.txt
+...</pre>
+</div>
+</div>
+</li>
+<li>
+<p>View the list of files of a particular volume which are in split-brain
+state:</p>
+<div class="paragraph">
+<p><code># gluster volume heal info split-brain</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view the list of files of test-volume which are in
+split-brain state:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume heal test-volume info split-brain
+Brick server1:/gfs/test-volume_2
+Number of entries: 12
+/83.txt
+/28.txt
+/69.txt
+...
+
+Brick :/gfs/test-volume_2
+Number of entries: 12
+/83.txt
+/28.txt
+/69.txt
+...</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>##Non Uniform File Allocation</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>NUFA translator or Non Uniform File Access translator is designed for
+giving higher preference to a local drive when used in a HPC type of
+environment. It can be applied to Distribute and Replica translators; in
+the latter case it ensures that <em>one</em> copy is local if space permits.</p>
+</div>
+<div class="paragraph">
+<p>When a client on a server creates files, the files are allocated to a
+brick in the volume based on the file name. This allocation may not be
+ideal, as there is higher latency and unnecessary network traffic for
+read/write operations to a non-local brick or export directory. NUFA
+ensures that the files are created in the local export directory of the
+server, and as a result, reduces latency and conserves bandwidth for
+that server accessing that file. This can also be useful for
+applications running on mount points on the storage server.</p>
+</div>
+<div class="paragraph">
+<p>If the local brick runs out of space or reaches the minimum disk free
+limit, instead of allocating files to the local brick, NUFA distributes
+files to other bricks in the same volume if there is space available on
+those bricks.</p>
+</div>
+<div class="paragraph">
+<p>NUFA should be enabled before creating any data in the volume.</p>
+</div>
+<div class="paragraph">
+<p>Use the following command to enable NUFA:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> # gluster volume set VOLNAME cluster.nufa enable on</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Important</strong></p>
+</div>
+<div class="paragraph">
+<p>NUFA is supported under the following conditions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Volumes with only with one brick per server.</p>
+</li>
+<li>
+<p>For use with a FUSE client.NUFA is not supported with NFS or SMB.</p>
+</li>
+<li>
+<p>A client that is mounting a NUFA-enabled volume must be present within
+the trusted storage pool.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The NUFA scheduler also exists, for use with the Unify translator; see
+below.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>volume bricks
+  type cluster/nufa
+  option local-volume-name brick1
+  subvolumes brick1 brick2 brick3 brick4 brick5 brick6 brick7
+end-volume</pre>
+</div>
+</div>
+<div id="nufa-additional-options" class="paragraph">
+<p>NUFA additional options</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>lookup-unhashed</p>
+<div class="paragraph">
+<p>This is an advanced option where files are looked up in all subvolumes
+if they are missing on the subvolume matching the hash value of the
+filename. The default is on.</p>
+</div>
+</li>
+<li>
+<p>local-volume-name</p>
+<div class="paragraph">
+<p>The volume name to consider local and prefer file creations on. The
+default is to search for a volume matching the hostname of the system.</p>
+</div>
+</li>
+<li>
+<p>subvolumes</p>
+<div class="paragraph">
+<p>This option lists the subvolumes that are part of this 'cluster/nufa'
+volume. This translator requires more than one subvolume.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bitrot-detection"><a class="anchor" href="#bitrot-detection"></a>BitRot Detection</h3>
+<div class="paragraph">
+<p>With BitRot detection in Gluster, it&#8217;s possible to identify "insidious"
+type of disk errors where data is silently corrupted with no indication
+from the disk to the storage software layer than an error has occured.
+This also helps in catching "backend" tinkering of bricks (where data is
+directly manipulated on the bricks without going through FUSE, NFS or
+any other access protocol(s).</p>
+</div>
+<div class="paragraph">
+<p>BitRot detection is disbled by default and needs to be enabled to make
+use of other sub-commands.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To enable bitrot detection for a given volume :</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume bitrot &lt;VOLNAME&gt; enable</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>and similarly to disable bitrot use:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    # gluster volume bitrot &lt;VOLNAME&gt; disable</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Enabling bitrot spanws the Signer &amp; Scrubber daemon per node.
+Signer is responsible for signing (calculating checksum for each file)
+an object and scrubber verifies the calculated checksum against the
+objects data.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Scrubber daemon has three (3) throttling modes that adjusts the rate
+at which objects are verified.</p>
+<div class="literalblock">
+<div class="content">
+<pre># volume bitrot &lt;VOLNAME&gt; scrub-throttle lazy
+
+# volume bitrot &lt;VOLNAME&gt; scrub-throttle normal
+
+# volume bitrot &lt;VOLNAME&gt; scrub-throttle aggressive</pre>
+</div>
+</div>
+</li>
+<li>
+<p>By default scrubber scrubs the filesystem biweekly. It&#8217;s possible to
+tune it to scrub based on predefined frequency such as monthly, etc.
+This can be done as shown below:</p>
+<div class="literalblock">
+<div class="content">
+<pre># volume bitrot &lt;VOLNAME&gt; scrub-frequency daily
+
+# volume bitrot &lt;VOLNAME&gt; scrub-frequency weekly
+
+# volume bitrot &lt;VOLNAME&gt; scrub-frequency biweekly
+
+# volume bitrot &lt;VOLNAME&gt; scrub-frequency monthly</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Daily scrubbing would not be available with GA release.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Scrubber daemon can be paused and later resumed when required. This
+can be done as shown below:</p>
+<div class="literalblock">
+<div class="content">
+<pre># volume bitrot &lt;VOLNAME&gt; scrub pause</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>and to resume scrubbing</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    # volume bitrot &lt;VOLNAME&gt; scrub resume</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Signing cannot be paused (and resumed) and would always be active
+as long as bitrot is enabled for that particular volume.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

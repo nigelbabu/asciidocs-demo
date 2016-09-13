@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Mandatory Locks</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Mandatory Locks
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class=" active" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Mandatory Locks</h2>
+        </div>
+        <div class="sect1">
+<h2 id="mandatory-locks"><a class="anchor" href="#mandatory-locks"></a>Mandatory Locks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Support for mandatory locks inside GlusterFS does not converge all by
+itself to what Linux kernel provides to user space file systems. Here we
+enforce core mandatory lock semantics with and without the help of file
+mode bits. Please read through the following design specification which
+explains the whole concept behind the mandatory locks implementation
+done for GlusterFS.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/gluster/glusterfs-specs/blob/master/done/GlusterFS%203.8/Mandatory%20Locks.md" class="bare">https://github.com/gluster/glusterfs-specs/blob/master/done/GlusterFS%203.8/Mandatory%20Locks.md</a></p>
+</div>
+<div class="sect2">
+<h3 id="implications-and-usage"><a class="anchor" href="#implications-and-usage"></a>Implications and Usage</h3>
+<div class="paragraph">
+<p>By default, mandatory locking will be disabled for a volume and a volume
+set options is available to configure volume to operate under 3
+different mandatory locking modes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="volume-option"><a class="anchor" href="#volume-option"></a>Volume Option</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>gluster volume set &lt;VOLNAME&gt; locks.mandatory-locking &lt;off / file /
+forced / optimal&gt;</em></strong></p>
+<div class="paragraph">
+<p><strong>off</strong> - Disable mandatory locking for specified volume.</p>
+</div>
+<div class="paragraph">
+<p><strong>file</strong> - Enable Linux kernel style mandatory locking semantics with the
+help of mode bits (not well tested)</p>
+</div>
+<div class="paragraph">
+<p><strong>forced</strong> - Check for conflicting byte range locks for every data
+modifying operation in a volume</p>
+</div>
+<div class="paragraph">
+<p><strong>optimal</strong> - Combinational mode where POSIX clients can live with their
+advisory lock semantics which will still honour the mandatory locks
+acquired by other clients like SMB.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note:- Please refer the design doc for more information on these key
+values.</p>
+</div>
+<div id="points-to-be-remembered" class="paragraph">
+<p>Points to be remembered</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Valid key values available with mandatory-locking volume set option
+are taken into effect only after a subsequent start/restart of the
+volume.</p>
+</li>
+<li>
+<p>Due to some outstanding issues, it is recommended to turn off the
+performance translators in order to have the complete functionality of
+mandatory-locks when volume is configured in any one of the above
+described mandatory-locking modes. Please see the 'Known issue' section
+below for more details.</p>
+</li>
+</ul>
+</div>
+<div id="known-issues" class="paragraph">
+<p>Known issues</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Since the whole logic of mandatory-locks are implemented within the
+locks translator loaded at the server side, early success returned to
+fops like open, read, write to upper/application layer by preformance
+translators residing at the client side will impact the intended
+fucntionality of mandatory-locks. One such issue is being tracked in the
+following bugzilla report:</p>
+<div class="paragraph">
+<p><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1194546" class="bare">https://bugzilla.redhat.com/show_bug.cgi?id=1194546</a></p>
+</div>
+</li>
+<li>
+<p>There is a possible race window uncovered with respect to mandatory
+locks and an ongoing read/write operation. For more details refer the
+bug report given below:</p>
+<div class="paragraph">
+<p><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1287099" class="bare">https://bugzilla.redhat.com/show_bug.cgi?id=1287099</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

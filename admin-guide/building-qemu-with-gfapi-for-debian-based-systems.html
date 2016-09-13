@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Building QEMU with gfapi for Debian-based systems</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Building QEMU with gfapi for Debian-based systems
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class=" active" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Satisfying dependencies</h2>
+        </div>
+        <div class="paragraph">
+<p>This howto has been tested on Ubuntu 13.10 in a clean, up to date
+environment. Older Ubuntu distros required some hacks if I remembered
+rightly. Other debian based distros should be able to follow this
+adjusting for dependencies. Please update this if you get it working on
+another distro.</p>
+</div>
+<div class="sect3">
+<h4 id="satisfying-dependencies"><a class="anchor" href="#satisfying-dependencies"></a>Satisfying dependencies</h4>
+<div class="paragraph">
+<p>Make the first stab at getting qemu dependencies</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    apt-get  build-dep qemu</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This next command grabs all the dependencies specified in the debian
+control file as asked for from upstream debian sid You can look into the
+options specified there and adjust to taste.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    # get almost all the rest and the tools to work up the debian magic
+    apt-get install devscripts quilt libiscsi-dev libusbredirparser-dev libssh2-1-dev libvdeplug-dev libjpeg-dev glusterfs*</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>we need a newer version of libseccomp for Ubuntu 13.10</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    mkdir libseccomp
+    cd libseccomp
+    # grab it from upstream sid
+    wget http://ftp.de.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.1.0+dfsg.orig.tar.gz
+    wget http://ftp.de.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.1.0+dfsg-1.debian.tar.gz
+    # get it ready
+    tar xf libseccomp_2.1.0+dfsg.orig.tar.gz
+    cd libseccomp-2.1.0+dfsg/
+    # install the debian magic
+    tar xf ../libseccomp_2.1.0+dfsg-1.debian.tar.gz
+    # apply series files if any
+    while quilt push; do quilt refresh; done
+    # build debs, they'll appear one directory up
+    debuild -i -us -uc -b
+    cd ..
+    # install it
+    dpkg -i *.deb</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="building-qemu"><a class="anchor" href="#building-qemu"></a>Building QEMU</h4>
+<div class="paragraph">
+<p>This next part is straightforward if your dependencies are met. For the
+advanced reader look around debian/control once it is extracted before
+you install as you may want to change what options QEMU is built with
+and what targets are requested.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    cd ..
+    mkdir qemu
+    cd qemu
+    # download our sources. you'll want to check back frequently on these for changes
+    wget http://ftp.de.debian.org/debian/pool/main/q/qemu/qemu_1.7.0+dfsg.orig.tar.xz
+    wget http://ftp.de.debian.org/debian/pool/main/q/qemu/qemu_1.7.0+dfsg-2.debian.tar.gz
+    wget http://download.gluster.org/pub/gluster/glusterfs/3.4/LATEST/glusterfs-3.4.2.tar.gz
+    tar xf glusterfs-3.4.2.tar.gz
+    tar xf qemu_1.7.0+dfsg.orig.tar.xz
+    cd qemu-1.7.0+dfsg/
+    # unpack the debian magic
+    tar xf ../qemu_1.7.0+dfsg-2.debian.tar.gz
+    # bring glusterfs in to the buiild
+    cp -r ../glusterfs-3.4.2 glusterfs
+    # the glusterfs check in configure looks around weird. I've never asked why but moving the src stuff up one works and tests fine
+    cd glusterfs/api/
+    mv src/* .
+    cd ../..
+    #you'll need to edit debian/control to enable glusterfs replacing
+
+     - ##--enable-glusterfs todo
+     + # --enable-glusterfs
+     + glusterfs-common (&gt;= 3.4.0),
+
+    #And finally build. It'll take ages.  http://xkcd.com/303/
+    # apply series if any
+    while quilt push; do quilt refresh; done
+    # build packages
+    debuild -i -us -uc -b
+    cd ..</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Your debs now available to install. It is up to the reader to determine
+what targets they want installed.</p>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

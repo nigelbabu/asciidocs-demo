@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Handling of users with many groups</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Handling of users with many groups
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class=" active" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Handling of users that belong to many groups</h2>
+        </div>
+        <div class="sect1">
+<h2 id="handling-of-users-that-belong-to-many-groups"><a class="anchor" href="#handling-of-users-that-belong-to-many-groups"></a>Handling of users that belong to many groups</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Users can belong to many different (UNIX) groups. These groups are
+generally used to allow or deny permissions for executing commands or
+access to files and directories.</p>
+</div>
+<div class="paragraph">
+<p>The number of groups a user can belong to depends on the operating
+system, but there are also components that support fewer groups. In
+Gluster, there are different restrictions on different levels in the
+stack. The explanations in this document should clarify which
+restrictions exist, and how these can be handled.</p>
+</div>
+<div class="sect2">
+<h3 id="tldr"><a class="anchor" href="#tldr"></a>tl;dr</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>if users belong to more than 90 groups, the brick processes need to
+resolve the secondary/auxilary groups with the <code>server.manage-gids</code>
+volume option</p>
+</li>
+<li>
+<p>the linux kernels <code>/proc</code> filesystem provides up to 32 groups of a
+running process, if this is not sufficient the mount option
+<code>resolve-gids</code> can be used</p>
+</li>
+<li>
+<p>Gluster/NFS needs <code>nfs.server-aux-gids</code> when users accessing a Gluster
+volume over NFS belong to more than 16 groups</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For all of the above options counts that the system doing the group
+resolving must be configured (<code>nsswitch</code>, <code>sssd</code>, ..) to be able to get
+all groups when only a UID is known.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="limit-in-the-glusterfs-protocol"><a class="anchor" href="#limit-in-the-glusterfs-protocol"></a>Limit in the GlusterFS protocol</h3>
+<div class="paragraph">
+<p>When a Gluster client does some action on a Gluster volume, the
+operation is sent in an RPC packet. This RPC packet contains an header
+with the credentials of the user. The server-side receives the RPC
+packet and uses the credentials from the RPC header to perform ownership
+operations and allow/deny checks.</p>
+</div>
+<div class="paragraph">
+<p>The RPC header used by the GlusterFS protocols can contain at most ~93
+groups. In order to pass this limit, the server process (brick)
+receiving the RPC procedure can do the resolving of the groups locally,
+and ignore the (too few) groups from the RPC header.</p>
+</div>
+<div class="paragraph">
+<p>This requires that the service process can resolve all of the users
+groups by the UID of the client process. Most environments that have
+many groups, already use a configuration where users and groups are
+maintained in a central location. for enterprises it is common to manage
+users and their groups in LDAP, Active Directory, NIS or similar.</p>
+</div>
+<div class="paragraph">
+<p>To have the groups of a user resolved on the server-side (brick), the
+volume option <code>server.manage-gids</code> needs to be set. Once this option is
+enabled, the brick processes will not use the groups that the Gluster
+clients send, but will use the POSIX <code>getgrouplist()</code> function to fetch
+them.</p>
+</div>
+<div class="paragraph">
+<p>Because this is a protocol limitation, all clients, including FUSE
+mounts, Gluster/NFS server and libgfapi applications are affected by
+this.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="group-limit-with-fuse"><a class="anchor" href="#group-limit-with-fuse"></a>Group limit with FUSE</h3>
+<div class="paragraph">
+<p>The FUSE client gets the groups of the process that does the I/O by
+reading the information from <code>/proc/$pid/status</code>. This file only
+contains up to 32 groups. If client-side xlators rely on all groups of a
+process/user (like posix-acl), these 32 groups could limit
+functionality.</p>
+</div>
+<div class="paragraph">
+<p>For that reason a mount option has been added. With the <code>resolve-gids</code>
+mount option, the FUSE client calls the POSIX <code>getgrouplist()</code> function
+instead of reading <code>/proc/$pid/status</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="group-limit-for-nfs"><a class="anchor" href="#group-limit-for-nfs"></a>Group limit for NFS</h3>
+<div class="paragraph">
+<p>The NFS protocol (actually the AUTH_SYS/AUTH_UNIX RPC header) allows up
+to 16 groups. These are the groups that the NFS-server receives from
+NFS-clients. Similar to the way the brick processes can resolve the
+groups on the server-side, the NFS-server can take the UID passed by the
+NFS-client and use that to resolve the groups. the volume option for
+that is <code>nfs.server-aux-gids</code>.</p>
+</div>
+<div class="paragraph">
+<p>Other NFS-servers offer options like this too. The Linux kernel nfsd
+server uses <code>rpc.mountd --manage-gids</code>. NFS-Ganesha has the
+configuration option <code>Manage_Gids</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="implications-of-these-solutions"><a class="anchor" href="#implications-of-these-solutions"></a>Implications of these solutions</h3>
+<div class="paragraph">
+<p>All of the mentioned options are disabled by default. one of the reasons
+is that resolving groups is an expensive operation. in many cases there
+is no need for supporting many groups and there could be a performance
+hit.</p>
+</div>
+<div class="paragraph">
+<p>When groups are resolved, the list is cached. the validity of the cache
+is configurable. the Gluster processes are not the only ones that cache
+these groups. <code>nscd</code> or <code>sssd</code> also keep a cache when they handle the
+<code>getgroupslist()</code> requests. When there are many requests, and querying
+the groups from a centralized management system takes long, caches might
+benefit from a longer validity.</p>
+</div>
+<div class="paragraph">
+<p>An other, less obvious difference might be noticed too. Many processes
+that are written with security in mind reduce the groups that the
+process can effectively use. This is normally done with the <code>setegids()</code>
+function. When storage processes do not honour the fewer groups that are
+effective, and the processes use the UID to resolve all groups of a
+process, the groups that got dropped with <code>setegids()</code> are added back
+again. this could lead to permissions that the process should not have.</p>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

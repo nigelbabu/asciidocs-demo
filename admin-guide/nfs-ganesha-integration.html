@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | NFS-Ganesha Integration</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        NFS-Ganesha Integration
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class=" active" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Configuring NFS-Ganesha over GlusterFS</h2>
+        </div>
+        <div class="sect1">
+<h2 id="configuring-nfs-ganesha-over-glusterfs"><a class="anchor" href="#configuring-nfs-ganesha-over-glusterfs"></a>Configuring NFS-Ganesha over GlusterFS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>NFS-Ganesha is a user space file server for the NFS protocol with
+support for NFSv3, v4, v4.1, pNFS. It provides a FUSE-compatible File
+System Abstraction Layer(FSAL) to allow the file-system developers to
+plug in their own storage mechanism and access it from any NFS client.
+NFS-Ganesha can access the FUSE filesystems directly through its FSAL
+without copying any data to or from the kernel, thus potentially
+improving response times.</p>
+</div>
+<div class="sect2">
+<h3 id="installing-nfs-ganesha"><a class="anchor" href="#installing-nfs-ganesha"></a>Installing nfs-ganesha</h3>
+<div class="sect4">
+<h5 id="gluster-rpms-3.7"><a class="anchor" href="#gluster-rpms-3.7"></a>Gluster RPMs (&gt;= 3.7)</h5>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>glusterfs-server</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>glusterfs-api</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>glusterfs-ganesha</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect4">
+<h5 id="ganesha-rpms-2.2"><a class="anchor" href="#ganesha-rpms-2.2"></a>Ganesha RPMs (&gt;= 2.2)</h5>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>nfs-ganesha</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>nfs-ganesha-gluster</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="start-nfs-ganesha-manually"><a class="anchor" href="#start-nfs-ganesha-manually"></a>Start NFS-Ganesha manually</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>To start NFS-Ganesha manually, use the command:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>service nfs-ganesha start</em></p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">where:
+/var/log/ganesha.log is the default log file for the ganesha process.
+/etc/ganesha/ganesha.conf is the default configuration file
+NIV_EVENT is the default log level.</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If user want to run ganesha in prefered mode, execute the following
+command :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>_#ganesha.nfsd -f -L -N _</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">For example:
+#ganesha.nfsd -f nfs-ganesha.conf -L nfs-ganesha.log -N NIV_DEBUG
+where:
+nfs-ganesha.log is the log file for the ganesha.nfsd process.
+nfs-ganesha.conf is the configuration file
+NIV_DEBUG is the log level.</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>By default exportlist for the server will be Null</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">Note : include following paremeters in ganesha configuration file for exporting gluster volumes
+NFS_Core_Param {
+        #Use supplied name other tha IP In NSM operations
+        NSM_Use_Caller_Name = true;
+        #Copy lock states into &quot;/var/lib/nfs/ganesha&quot; dir
+        Clustered = false;
+        #Use a non-privileged port for RQuota
+        Rquota_Port = 4501;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="step-by-step-procedures-to-exporting-glusterfs-volume-via-nfs-ganesha"><a class="anchor" href="#step-by-step-procedures-to-exporting-glusterfs-volume-via-nfs-ganesha"></a>Step by step procedures to exporting GlusterFS volume via NFS-Ganesha</h3>
+<div class="sect4">
+<h5 id="step-1"><a class="anchor" href="#step-1"></a>step 1 :</h5>
+<div class="paragraph">
+<p>To export any GlusterFS volume or directory inside volume, create the
+EXPORT block for each of those entries in a export configuration file.
+The following paremeters are required to export any entry. - <em>#cat
+export.conf</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">EXPORT{
+    Export_Id = 1 ;   # Export ID unique to each export
+    Path = &quot;volume_path&quot;;  # Path of the volume to be exported. Eg: &quot;/test_volume&quot;
+
+    FSAL {
+        name = GLUSTER;
+        hostname = &quot;10.xx.xx.xx&quot;;  # IP of one of the nodes in the trusted pool
+        volume = &quot;volume_name&quot;;  # Volume name. Eg: &quot;test_volume&quot;
+    }
+
+    Access_type = RW;    # Access permissions
+    Squash = No_root_squash; # To enable/disable root squashing
+    Disable_ACL = TRUE;  # To enable/disable ACL
+    Pseudo = &quot;pseudo_path&quot;;  # NFSv4 pseudo path for this export. Eg: &quot;/test_volume_pseudo&quot;
+    Protocols = &quot;3&quot;,&quot;4&quot; ;    # NFS protocols supported
+    Transports = &quot;UDP&quot;,&quot;TCP&quot; ; # Transport protocols supported
+    SecType = &quot;sys&quot;;     # Security flavors supported
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="step-2"><a class="anchor" href="#step-2"></a>step 2 :</h5>
+<div class="paragraph">
+<p>Now include the export configuration file in the ganesha configuration
+file(by default ).This can be done by adding the line below at the end
+of file - %include “”</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="step-3"><a class="anchor" href="#step-3"></a>step 3 :</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>To check if the volume is exported, run</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>#showmount -e localhost</em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="using-highly-available-active-active-nfs-ganesha-and-glusterfs-cli"><a class="anchor" href="#using-highly-available-active-active-nfs-ganesha-and-glusterfs-cli"></a>Using Highly Available Active-Active NFS-Ganesha And GlusterFS cli</h3>
+<div class="paragraph">
+<p>In a highly available active-active environment, if a NFS-Ganesha server
+that is connected to a NFS client running a particular application
+crashes, the application/NFS client is seamlessly connected to another
+NFS-Ganesha server without any administrative intervention. The cluster
+is maintained using Pacemaker and Corosync. Pacemaker acts a resource
+manager and Corosync provides the communication layer of the cluster.
+Data coherency across the multi-head NFS-Ganesha servers in the cluster
+is achieved using the UPCALL infrastructure. UPCALL infrastructure is a
+generic and extensible framework that sends notifications to the
+respective glusterfs clients (in this case NFS-Ganesha server) in case
+of any changes detected in the backend filesystem.</p>
+</div>
+<div class="paragraph">
+<p>The Highly Available cluster is configured in the following three
+stages: <mark>#</mark> Creating the ganesha-ha.conf file The
+ganesha-ha.conf.example is created in the following location
+/etc/ganesha when Gluster Storage is installed. Rename the file to
+ganesha-ha.conf and make the changes as suggested in the following
+example: sample ganesha-ha.conf file:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p># Name of the HA cluster created. must be unique within the subnet</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>HA_NAME="ganesha-ha-360"</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p># The gluster server from which to mount the shared data volume.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>HA_VOL_SERVER="server1"</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p># The subset of nodes of the Gluster Trusted Pool that form the ganesha
+HA cluster.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p># Hostname is specified.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>HA_CLUSTER_NODES="server1,server2,&#8230;&#8203;"</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>#HA_CLUSTER_NODES="server1.lab.redhat.com,server2.lab.redhat.com,&#8230;&#8203;"</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p># Virtual IPs for each of the nodes specified above.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>VIP_server1="10.0.2.1"</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>VIP_server2="10.0.2.2"</p>
+</div>
+</blockquote>
+</div>
+<div class="sect3">
+<h4 id="configuring-nfs-ganesha-using-gluster-cli"><a class="anchor" href="#configuring-nfs-ganesha-using-gluster-cli"></a>Configuring NFS-Ganesha using gluster CLI</h4>
+<div class="paragraph">
+<p>The HA cluster can be set up or torn down using gluster CLI. In
+addition, it can export and unexport specific volumes. For more
+information, see section Configuring NFS-Ganesha using gluster CLI.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="modifying-the-ha-cluster-using-the-ganesha-ha.sh-script"><a class="anchor" href="#modifying-the-ha-cluster-using-the-ganesha-ha.sh-script"></a>Modifying the HA cluster using the <code>ganesha-ha.sh</code> script</h4>
+<div class="paragraph">
+<p>Post the cluster creation any further modification can be done using the
+<code>ganesha-ha.sh</code> script. For more information, see the section Modifying
+the HA cluster using the <code>ganesha-ha.sh</code> script.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="step-by-step-guide"><a class="anchor" href="#step-by-step-guide"></a>Step-by-step guide</h3>
+<div class="sect3">
+<h4 id="configuring-nfs-ganesha-using-gluster-cli-1"><a class="anchor" href="#configuring-nfs-ganesha-using-gluster-cli-1"></a>Configuring NFS-Ganesha using Gluster CLI⁠</h4>
+<div class="sect4">
+<h5 id="pre-requisites-to-run-nfs-ganesha"><a class="anchor" href="#pre-requisites-to-run-nfs-ganesha"></a>Pre-requisites to run NFS-Ganesha</h5>
+<div class="paragraph">
+<p>Ensure that the following pre-requisites are taken into consideration
+before you run NFS-Ganesha in your environment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A Gluster Storage volume must be available for export and NFS-Ganesha
+rpms are installed.</p>
+</li>
+<li>
+<p>IPv6 must be enabled on the host interface which is used by the
+NFS-Ganesha daemon. To enable IPv6 support, perform the following steps:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Comment or remove the line options ipv6 disable=1 in the
+/etc/modprobe.d/ipv6.conf file.</p>
+</li>
+<li>
+<p>Reboot the system.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ensure that all the nodes in the cluster are DNS resolvable. For
+example, you can populate the /etc/hosts with the details of all the
+nodes in the cluster.</p>
+</li>
+<li>
+<p>Disable and stop NetworkManager service.</p>
+</li>
+<li>
+<p>Enable and start network service on all machines.</p>
+</li>
+<li>
+<p>Create and mount a gluster shared volume.</p>
+</li>
+<li>
+<p>Install Pacemaker and Corosync on all machines.</p>
+</li>
+<li>
+<p>Set the cluster auth password on all the machines.</p>
+</li>
+<li>
+<p>Passwordless ssh needs to be enabled on all the HA nodes. Follow these
+steps,</p>
+<div class="ulist">
+<ul>
+<li>
+<p>On one (primary) node in the cluster, run:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ssh-keygen -f /var/lib/glusterd/nfs/secret.pem</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Deploy the pubkey ~root/.ssh/authorized keys on <em>all</em> nodes, run:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ssh-copy-id -i /var/lib/glusterd/nfs/secret.pem.pub root@$node</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Copy the keys to <em>all</em> nodes in the cluster, run:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>scp /var/lib/glusterd/nfs/secret.* $node:/var/lib/glusterd/nfs/</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="configuring-the-ha-cluster"><a class="anchor" href="#configuring-the-ha-cluster"></a>Configuring the HA Cluster</h5>
+<div class="paragraph">
+<p>To setup the HA cluster, enable NFS-Ganesha by executing the following
+command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#gluster nfs-ganesha enable</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To tear down the HA cluster, execute the following command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#gluster nfs-ganesha disable</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="exporting-volumes-through-nfs-ganesha"><a class="anchor" href="#exporting-volumes-through-nfs-ganesha"></a>Exporting Volumes through NFS-Ganesha</h5>
+<div class="paragraph">
+<p>To export a Red Hat Gluster Storage volume, execute the following
+command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#gluster volume set &lt;volname&gt; ganesha.enable on</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To unexport a Red Hat Gluster Storage volume, execute the following
+command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#gluster volume set &lt;volname&gt; ganesha.enable off</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command unexports the Red Hat Gluster Storage volume without
+affecting other exports.</p>
+</div>
+<div class="paragraph">
+<p>To verify the status of the volume set options, follow the guidelines
+mentioned below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Check if NFS-Ganesha is started by executing the following command:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ps aux | grep ganesha</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Check if the volume is exported.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>showmount -e localhost</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The logs of ganesha.nfsd daemon are written to /var/log/ganesha.log.
+Check the log file on noticing any unexpected behavior.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="modifying-the-ha-cluster-using-the-ganesha-ha.sh-script-1"><a class="anchor" href="#modifying-the-ha-cluster-using-the-ganesha-ha.sh-script-1"></a>Modifying the HA cluster using the ganesha-ha.sh script</h4>
+<div class="paragraph">
+<p>To modify the existing HA cluster and to change the default values of
+the exports use the ganesha-ha.sh script located at
+/usr/libexec/ganesha/. <mark>#</mark># Adding a node to the cluster Before adding a
+node to the cluster, ensure all the prerequisites mentioned in section
+<code>Pre-requisites to run NFS-Ganesha</code> is met. To add a node to the
+cluster. execute the following command on any of the nodes in the
+existing NFS-Ganesha cluster:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#./ganesha-ha.sh --add &lt;HA_CONF_DIR&gt; &lt;HOSTNAME&gt; &lt;NODE-VIP&gt;
+where,
+HA_CONF_DIR: The directory path containing the ganesha-ha.conf file.
+HOSTNAME: Hostname of the new node to be added
+NODE-VIP: Virtual IP of the new node to be added.</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="deleting-a-node-in-the-cluster"><a class="anchor" href="#deleting-a-node-in-the-cluster"></a>Deleting a node in the cluster</h5>
+<div class="paragraph">
+<p>To delete a node from the cluster, execute the following command on any
+of the nodes in the existing NFS-Ganesha cluster:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#./ganesha-ha.sh --delete &lt;HA_CONF_DIR&gt; &lt;HOSTNAME&gt;
+
+where,
+HA_CONF_DIR: The directory path containing the ganesha-ha.conf file.
+HOSTNAME: Hostname of the new node to be added</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="modifying-the-default-export-configuration"><a class="anchor" href="#modifying-the-default-export-configuration"></a>Modifying the default export configuration</h5>
+<div class="paragraph">
+<p>To modify the default export configurations perform the following steps
+on any of the nodes in the existing ganesha cluster:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Edit/add the required fields in the corresponding export file located
+at <code>/etc/ganesha/exports</code>.</p>
+</li>
+<li>
+<p>Execute the following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre>#./ganesha-ha.sh --refresh-config &lt;HA_CONFDIR&gt; &lt;volname&gt;
+
+where,
+HA_CONF_DIR: The directory path containing the ganesha-ha.conf file.
+volname: The name of the volume whose export configuration has to be changed.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note The export ID must not be changed. ⁠ ## Configuring Gluster volume
+for pNFS The Parallel Network File System (pNFS) is part of the NFS v4.1
+protocol that allows compute clients to access storage devices directly
+and in parallel. The pNFS cluster consists of MDS(Meta-Data-Server) and
+DS (Data-Server). The client sends all the read/write requests directly
+to DS and all other operations are handle by the MDS.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-by-step-guide-1"><a class="anchor" href="#step-by-step-guide-1"></a>Step by step guide</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Turn on feature.cache-invalidation for the volume.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>gluster v set features.cache-invalidation on</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select one of nodes in cluster as MDS and configure it adding
+following block to ganesha configuration file</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">GLUSTER
+{
+ PNFS_MDS = true;
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Mannually start NFS-Ganesha in every node in the cluster.</p>
+</li>
+<li>
+<p>Check whether volume is exported via nfs-ganesha in all the nodes.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>#showmount -e localhost</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Mount the volume using NFS version 4.1 protocol with the ip of MDS</p>
+<div class="ulist">
+<ul>
+<li>
+<p>_#mount -t nfs4 -o minorversion=1 :/ _</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="points-to-be-noted"><a class="anchor" href="#points-to-be-noted"></a>Points to be Noted</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Current architecture supports only single MDS and mulitple DS. The
+server with which client mounts will act as MDS and all severs including
+MDS can act as DS.</p>
+</li>
+<li>
+<p>Currently HA is not supported for pNFS(more specfically MDS). Although
+it is configurable, but consistency is guaranteed across the cluster.</p>
+</li>
+<li>
+<p>If any of the DS goes down, then MDS will handle those I/O&#8217;s.</p>
+</li>
+<li>
+<p>Hereafter, all the subsequent NFS clients need to use same server for
+mounting that volume via pNFS. i.e more than one MDS for a volume is not
+prefered</p>
+</li>
+<li>
+<p>pNFS support is only tested with distributed, replicated or
+distribute-replicate volumes</p>
+</li>
+<li>
+<p>It is tested and verfied with RHEL 6.5 , fedora 20, fedora 21 nfs
+clients. It is always better to use latest nfs-clients</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

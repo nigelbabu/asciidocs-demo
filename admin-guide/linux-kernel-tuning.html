@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Linux Kernel Tuning</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Linux Kernel Tuning
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class=" active" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Linux kernel tuning for GlusterFS</h2>
+        </div>
+        <div class="sect2">
+<h3 id="linux-kernel-tuning-for-glusterfs"><a class="anchor" href="#linux-kernel-tuning-for-glusterfs"></a>Linux kernel tuning for GlusterFS</h3>
+<div class="paragraph">
+<p>Every now and then, questions come up here internally and with many
+enthusiasts on what Gluster has to say about kernel tuning, if anything.</p>
+</div>
+<div class="paragraph">
+<p>The rarity of kernel tuning is on account of the Linux kernel doing a
+pretty good job on most workloads. But there is a flip side to this
+design. The Linux kernel historically has eagerly eaten up a lot of RAM,
+provided there is some, or driven towards caching as the primary way to
+improve performance.</p>
+</div>
+<div class="paragraph">
+<p>For most cases, this is fine, but as the amount of workload increases
+over time and clustered load is thrown upon the servers, this turns out
+to be troublesome, leading to catastrophic failures of jobs etc.</p>
+</div>
+<div class="paragraph">
+<p>Having had a fair bit of experience looking at large memory systems with
+heavily loaded regressions, be it CAD, EDA or similar tools, we&#8217;ve
+sometimes encountered stability problems with Gluster. We had to
+carefully analyse the memory footprint and amount of disk wait times
+over days. This gave us a rather remarkable story of disk trashing, huge
+iowaits, kernel oops, disk hangs etc.</p>
+</div>
+<div class="paragraph">
+<p>This article is the result of my many experiences with tuning options
+which were performed on many sites. The tuning not only helped with
+overall responsiveness, but it dramatically stabilized the cluster
+overall.</p>
+</div>
+<div class="paragraph">
+<p>When it comes to memory tuning the journey starts with the 'VM'
+subsystem which has a bizarre number of options, which can cause a lot
+of confusion.</p>
+</div>
+<div class="sect3">
+<h4 id="vm.swappiness"><a class="anchor" href="#vm.swappiness"></a>vm.swappiness</h4>
+<div class="paragraph">
+<p>vm.swappiness is a tunable kernel parameter that controls how much the
+kernel favors swap over RAM. At the source code level, it’s also defined
+as the tendency to steal mapped memory. A high swappiness value means
+that the kernel will be more apt to unmap mapped pages. A low swappiness
+value means the opposite, the kernel will be less apt to unmap mapped
+pages. In other words, the higher the vm.swappiness value, the more the
+system will swap.</p>
+</div>
+<div class="paragraph">
+<p>High system swapping has very undesirable effects when there are huge
+chunks of data being swapped in and out of RAM. Many have argued for the
+value to be set high, but in my experience, setting the value to '0'
+causes a performance increase.</p>
+</div>
+<div class="paragraph">
+<p>Conforming with the details here - <a href="http://lwn.net/Articles/100978/" class="bare">http://lwn.net/Articles/100978/</a></p>
+</div>
+<div class="paragraph">
+<p>But again these changes should be driven by testing and due diligence
+from the user for their own applications. Heavily loaded, streaming apps
+should set this value to '0'. By changing this value to '0', the
+system&#8217;s responsiveness improves.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="vm.vfs_cache_pressure"><a class="anchor" href="#vm.vfs_cache_pressure"></a>vm.vfs_cache_pressure</h4>
+<div class="paragraph">
+<p>This option controls the tendency of the kernel to reclaim the memory
+which is used for caching of directory and inode objects.</p>
+</div>
+<div class="paragraph">
+<p>At the default value of vfs_cache_pressure=100 the kernel will attempt
+to reclaim dentries and inodes at a "fair" rate with respect to
+pagecache and swapcache reclaim. Decreasing vfs_cache_pressure causes
+the kernel to prefer to retain dentry and inode caches. When
+vfs_cache_pressure=0, the kernel will never reclaim dentries and inodes
+due to memory pressure and this can easily lead to out-of-memory
+conditions. Increasing vfs_cache_pressure beyond 100 causes the kernel
+to prefer to reclaim dentries and inodes.</p>
+</div>
+<div class="paragraph">
+<p>With GlusterFS, many users with a lot of storage and many small files
+easily end up using a lot of RAM on the server side due to
+'inode/dentry' caching, leading to decreased performance when the kernel
+keeps crawling through data-structures on a 40GB RAM system. Changing
+this value higher than 100 has helped many users to achieve fair caching
+and more responsiveness from the kernel.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="vm.dirty_background_ratio"><a class="anchor" href="#vm.dirty_background_ratio"></a>vm.dirty_background_ratio</h4>
+
+</div>
+<div class="sect3">
+<h4 id="vm.dirty_ratio"><a class="anchor" href="#vm.dirty_ratio"></a>vm.dirty_ratio</h4>
+<div class="paragraph">
+<p>The first of the two (vm.dirty_background_ratio) defines the percentage
+of memory that can become dirty before a background flushing of the
+pages to disk starts. Until this percentage is reached no pages are
+flushed to disk. However when the flushing starts, then it&#8217;s done in the
+background without disrupting any of the running processes in the
+foreground.</p>
+</div>
+<div class="paragraph">
+<p>Now the second of the two parameters (vm.dirty_ratio) defines the
+percentage of memory which can be occupied by dirty pages before a
+forced flush starts. If the percentage of dirty pages reaches this
+threshold, then all processes become synchronous, and they are not
+allowed to continue until the io operation they have requested is
+actually performed and the data is on disk. In cases of high performance
+I/O machines, this causes a problem as the data caching is cut away and
+all of the processes doing I/O become blocked to wait for I/O. This will
+cause a large number of hanging processes, which leads to high load,
+which leads to an unstable system and crappy performance.</p>
+</div>
+<div class="paragraph">
+<p>Lowering them from standard values causes everything to be flushed to
+disk rather than storing much in RAM. It helps large memory systems,
+which would normally flush a 45G-90G pagecache to disk, causing huge
+wait times for front-end applications, decreasing overall responsiveness
+and interactivity.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="procsysvmpagecache"><a class="anchor" href="#procsysvmpagecache"></a>"1" &gt; /proc/sys/vm/pagecache</h4>
+<div class="paragraph">
+<p>Page Cache is a disk cache which holds data from files and executable
+programs, i.e. pages with actual contents of files or block devices.
+Page Cache (disk cache) is used to reduce the number of disk reads. A
+value of '1' indicates 1% of the RAM is used for this, so that most of
+them are fetched from disk rather than RAM. This value is somewhat fishy
+after the above values have been changed. Changing this option is not
+necessary, but if you are still paranoid about controlling the
+pagecache, this value should help.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="deadline-sysblocksdcqueuescheduler"><a class="anchor" href="#deadline-sysblocksdcqueuescheduler"></a>"deadline" &gt; /sys/block/sdc/queue/scheduler</h4>
+<div class="paragraph">
+<p>The I/O scheduler is a component of the Linux kernel which decides how
+the read and write buffers are to be queued for the underlying device.
+Theoretically 'noop' is better with a smart RAID controller because
+Linux knows nothing about (physical) disk geometry, therefore it can be
+efficient to let the controller, well aware of disk geometry, handle the
+requests as soon as possible. But 'deadline' seems to enhance
+performance. You can read more about them in the Linux kernel source
+documentation: linux/Documentation/block/*iosched.txt . I have also seen
+'read' throughput increase during mixed-operations (many writes).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sysblocksdcqueuenr_requests"><a class="anchor" href="#sysblocksdcqueuenr_requests"></a>"256" &gt; /sys/block/sdc/queue/nr_requests</h4>
+<div class="paragraph">
+<p>This is the size of I/O requests which are buffered before they are
+communicated to the disk by the Scheduler. The internal queue size of
+some controllers (queue_depth) is larger than the I/O scheduler&#8217;s
+nr_requests so that the I/O scheduler doesn&#8217;t get much of a chance to
+properly order and merge the requests. Deadline or CFQ scheduler likes
+to have nr_requests to be set 2 times the value of queue_depth, which is
+the default for a given controller. Merging the order and requests helps
+the scheduler to be more responsive during huge load.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="echo-16-procsysvmpage-cluster"><a class="anchor" href="#echo-16-procsysvmpage-cluster"></a>echo "16" &gt; /proc/sys/vm/page-cluster</h4>
+<div class="paragraph">
+<p>page-cluster controls the number of pages which are written to swap in a
+single attempt. It defines the swap I/O size, in the above example
+adding '16' as per the RAID stripe size of 64k. This wouldn&#8217;t make sense
+after you have used swappiness=0, but if you defined swappiness=10 or
+20, then using this value helps when your have a RAID stripe size of
+64k.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="blockdev---setra-4096-dev-eg--sdb-hdc-or-dev_mapper"><a class="anchor" href="#blockdev---setra-4096-dev-eg--sdb-hdc-or-dev_mapper"></a>blockdev --setra 4096 /dev/ (eg:- sdb, hdc or dev_mapper)</h4>
+<div class="paragraph">
+<p>Default block device settings often result in terrible performance for
+many RAID controllers. Adding the above option, which sets read-ahead to
+4096 * 512-byte sectors, at least for the streamed copy, increases the
+speed, saturating the HD&#8217;s integrated cache by reading ahead during the
+period used by the kernel to prepare I/O. It may put in cached data
+which will be requested by the next read. Too much read-ahead may kill
+random I/O on huge files if it uses potentially useful drive time or
+loads data beyond caches.</p>
+</div>
+<div class="paragraph">
+<p>A few other miscellaneous changes which are recommended at filesystem
+level but haven&#8217;t been tested yet are the following. Make sure that your
+filesystem knows about the stripe size and number of disks in the array.
+E.g. for a raid5 array with a stripe size of 64K and 6 disks
+(effectively 5, because in every stripe-set there is one disk doing
+parity). These are built on theoretical assumptions and gathered from
+various other blogs/articles provided by RAID experts.</p>
+</div>
+<div class="paragraph">
+<p>&#8594; ext4 fs, 5 disks, 64K stripe, units in 4K blocks</p>
+</div>
+<div class="paragraph">
+<p>mkfs -text4 -E stride=$64/4</p>
+</div>
+<div class="paragraph">
+<p>&#8594; xfs, 5 disks, 64K stripe, units in 512-byte sectors</p>
+</div>
+<div class="paragraph">
+<p>mkfs -txfs -d sunit=$64*2 -d swidth=$5*64*2</p>
+</div>
+<div class="paragraph">
+<p>You may want to consider increasing the above stripe sizes for streaming
+large files.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Above changes are highly subjective with certain types of
+applications. This article doesn&#8217;t guarantee any benefits whatsoever
+without prior due diligence from the user for their respective
+applications. It should only be applied at the behest of an expected
+increase in overall system responsiveness or if it resolves ongoing
+issues.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>More informative and interesting articles/emails/blogs to read</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://dom.as/2008/02/05/linux-io-schedulers/" class="bare">http://dom.as/2008/02/05/linux-io-schedulers/</a></p>
+</li>
+<li>
+<p><a href="http://www.nextre.it/oracledocs/oraclemyths.html" class="bare">http://www.nextre.it/oracledocs/oraclemyths.html</a></p>
+</li>
+<li>
+<p><a href="http://article.gmane.org/gmane.linux.raid/17546" class="bare">http://article.gmane.org/gmane.linux.raid/17546</a></p>
+</li>
+<li>
+<p><a href="https://lkml.org/lkml/2006/11/15/40" class="bare">https://lkml.org/lkml/2006/11/15/40</a></p>
+</li>
+<li>
+<p><a href="http://misterd77.blogspot.com/2007/11/3ware-hardware-raid-vs-linux-software.html" class="bare">http://misterd77.blogspot.com/2007/11/3ware-hardware-raid-vs-linux-software.html</a></p>
+</li>
+<li>
+<p><a href="http://www.jejik.com/articles/2008/04/benchmarking_linux_filesystems_on_software_raid_1/" class="bare">http://www.jejik.com/articles/2008/04/benchmarking_linux_filesystems_on_software_raid_1/</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code>   Last updated by: `User:y4m4[`User:y4m4</code>]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="commentjdarcy"><a class="anchor" href="#commentjdarcy"></a>comment:jdarcy</h4>
+<div class="paragraph">
+<p>Some additional tuning ideas:</p>
+</div>
+<div class="paragraph">
+<p><code>   <strong> The choice of scheduler is *really</strong> hardware- and workload-dependent, and some schedulers have unique features other than performance.  For example, last time I looked cgroups support was limited to the cfq scheduler.  Different tests regularly do best on any of cfq, deadline, or noop.  The best advice here is not to use a particular scheduler but to try them all for a specific need.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   * It&#8217;s worth checking to make sure that /sys/&#8230;&#8203;/max_sectors_kb matches max_hw_sectors_kb.  I haven&#8217;t seen this problem for a while, but back when I used to work on Lustre I often saw that these didn&#8217;t match and performance suffered.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   * For read-heavy workloads, experimenting with /sys/&#8230;&#8203;/readahead_kb is definitely worthwhile.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   * Filesystems should be built with -I 512 or similar so that more xattrs can be stored in the inode instead of requiring an extra seek.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   * Mounting with noatime or relatime is usually good for performance.</code></p>
+</div>
+<div class="sect4">
+<h5 id="replyy4m4"><a class="anchor" href="#replyy4m4"></a>reply:y4m4</h5>
+<div class="paragraph">
+<p><code>   Agreed i was about write those parameters you mentioned. I should write another elaborate article on FS changes. </code></p>
+</div>
+<div class="paragraph">
+<p>y4m4</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="commenteco"><a class="anchor" href="#commenteco"></a>comment:eco</h4>
+<div class="paragraph">
+<p><code>       1 year ago</code><br>
+<code>   This article is the model on which all articles should be written.  Detailed information, solid examples and a great selection of references to let readers go more in depth on topics they choose.  Great benchmark for others to strive to attain.</code><br>
+<code>       Eco</code><br>
+<mark>#</mark> comment:y4m4</p>
+</div>
+<div class="paragraph">
+<p><code>   sysctl -w net.core.{r,w}mem_max = 4096000 - this helped us to Reach 800MB/sec with replicated GlusterFS on 10gige  - Thanks to Ben England for these test results. </code><br>
+<code>       y4m4</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="commentbengland"><a class="anchor" href="#commentbengland"></a>comment:bengland</h4>
+<div class="paragraph">
+<p><code>   After testing Gluster 3.2.4 performance with RHEL6.1, I&#8217;d suggest some changes to this article&#8217;s recommendations:</code></p>
+</div>
+<div class="paragraph">
+<p><code>   vm.swappiness=10 not 0 -- I think 0 is a bit extreme and might lead to out-of-memory conditions, but 10 will avoid just about all paging/swapping.  If you still see swapping, you need to probably focus on restricting dirty pages with vm.dirty_ratio.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   vfs_cache_pressure &gt; 100 -- why?   I thought this was a percentage.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   vm.pagecache=1 -- some distros (e.g. RHEL6) don&#8217;t have vm.pagecache parameter. </code></p>
+</div>
+<div class="paragraph">
+<p><code>   vm.dirty_background_ratio=1 not 10 (kernel default?) -- the kernel default is a bit dependent on choice of Linux distro, but for most workloads it&#8217;s better to set this parameter very low to cause Linux to push dirty pages out to storage sooner.    It means that if dirty pages exceed 1% of RAM then it will start to asynchronously write dirty pages to storage. The only workload where this is really bad: apps that write temp files and then quickly delete them (compiles) -- and you should probably be using local storage for such files anyway. </code></p>
+</div>
+<div class="paragraph">
+<p><code>   Choice of vm.dirty_ratio is more dependent upon the workload, but in other contexts I have observed that response time fairness and stability is much better if you lower dirty ratio so that it doesn&#8217;t take more than 2-5 seconds to flush all dirty pages to storage. </code></p>
+</div>
+<div class="paragraph">
+<p><code>   block device parameters:</code></p>
+</div>
+<div class="paragraph">
+<p><code>   I&#8217;m not aware of any case where cfq scheduler actually helps Gluster server.   Unless server I/O threads correspond directly to end-users, I don&#8217;t see how cfq can help you.  Deadline scheduler is a good choice.  I/O request queue has to be deep enough to allow scheduler to reorder requests to optimize away disk seeks.  The parameters max_sectors_kb and nr_requests are relevant for this.  For read-ahead, consider increasing it to the point where you prefetch for longer period of time than a disk seek (on order of 10 msec), so that you can avoid unnecessary disk seeks for multi-stream workloads.  This comes at the expense of I/O latency so don&#8217;t overdo it.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   network:</code></p>
+</div>
+<div class="paragraph">
+<p><code>   jumbo frames can increase throughput significantly for 10-GbE networks.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   Raise net.core.{r,w}mem_max to 540000 from default of 131071  (not 4 MB above, my previous recommendation).  Gluster 3.2 does setsockopt() call to use 1/2 MB mem for TCP socket buffer space.</code><br>
+<code>       bengland</code><br>
+<mark>#</mark> comment:hjmangalam</p>
+</div>
+<div class="paragraph">
+<p><code>   Thanks very much for noting this info - the descriptions are VERY good.. I&#8217;m in the midst of debugging a misbehaving gluster that can&#8217;t seem to handle small writes over IPoIB and this contains some useful pointers.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   Some suggestions that might make this more immediately useful:</code></p>
+</div>
+<div class="paragraph">
+<p><code>   - I&#8217;m assuming that this discussion refers to the gluster server nodes, not to the gluster native client nodes, yes?  If that&#8217;s the case, are there are also kernel parameters or recommended settings for the client nodes?</code><br>
+<code>   -  While there are some cases where you mention that a value should be changed to a particular # or %, in a number of cases you advise just increasing/decreasing the values, which for something like  a kernel parameter is probably not a useful suggestion.  Do I raise it by 10?  10%  2x? 10x?  </code></p>
+</div>
+<div class="paragraph">
+<p><code>   I also ran across a complimentary page, which might be of  interest - it explains more of the vm variables, especially as it relates to writing.</code><br>
+<code>   "Theory of Operation and Tuning for Write-Heavy Loads" </code><br>
+<code>      `http://www.westnet.com/~gsmith/content/linux-pdflush.htm<br>
+`   and refs therein.</code></p>
+</div>
+<div class="paragraph">
+<p><code>       hjmangalam</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="commentbengland-1"><a class="anchor" href="#commentbengland-1"></a>comment:bengland</h4>
+<div class="paragraph">
+<p><code>   Here are some additional suggestions based on recent testing:</code><br>
+<code>   - scaling out number of clients -- you need to increase the size of the ARP tables on Gluster server if you want to support more than 1K clients mounting a gluster volume.  The defaults for RHEL6.3 were too low to support this, we used this:</code></p>
+</div>
+<div class="paragraph">
+<p><code>   net.ipv4.neigh.default.gc_thresh2 = 2048</code><br>
+<code>   net.ipv4.neigh.default.gc_thresh3 = 4096</code></p>
+</div>
+<div class="paragraph">
+<p><code>   In addition, tunings common to webservers become relevant at this number of clients as well, such as netdev_max_backlog, tcp_fin_timeout, and somaxconn.</code></p>
+</div>
+<div class="paragraph">
+<p><code>   Bonding mode 6 has been observed to increase replication write performance, I have no experience with bonding mode 4 but it should work if switch is properly configured, other bonding modes are a waste of time.</code></p>
+</div>
+<div class="paragraph">
+<p><code>       bengland</code><br>
+<code>       3 months ago</code></p>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

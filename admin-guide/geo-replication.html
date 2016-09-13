@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Geo Replication</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Geo Replication
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class=" active" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Managing Geo-replication</h2>
+        </div>
+        <div class="sect1">
+<h2 id="managing-geo-replication"><a class="anchor" href="#managing-geo-replication"></a>Managing Geo-replication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Geo-replication provides a continuous, asynchronous, and incremental
+replication service from one site to another over Local Area Networks
+(LANs), Wide Area Network (WANs), and across the Internet.</p>
+</div>
+<div class="paragraph">
+<p>Geo-replication uses a master–slave model, whereby replication and
+mirroring occurs between the following partners:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Master</strong> – a GlusterFS volume</p>
+</li>
+<li>
+<p><strong>Slave</strong> – a slave which can be of the following types:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A local directory which can be represented as file URL like
+<code><a href="file:///path/to/dir" class="bare">file:///path/to/dir</a></code>. You can use shortened form, for example,
+<code>/path/to/dir</code>.</p>
+</li>
+<li>
+<p>A GlusterFS Volume - Slave volume can be either a local volume like
+<code>gluster://localhost:volname</code> (shortened form - <code>:volname</code>) or a volume
+served by different host like <code>gluster://host:volname</code> (shortened form -
+<code>host:volname</code>).</p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>Both of the above types can be accessed remotely using SSH tunnel. To
+use SSH, add an SSH prefix to either a file URL or gluster type URL. For
+example, <code>ssh://root@remote-host:/path/to/dir</code> (shortened form -
+<code>root@remote-host:/path/to/dir</code>) or
+<code>ssh://root@remote-host:gluster://localhost:volname</code> (shortened from -
+<code>root@remote-host::volname</code>).</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This section introduces Geo-replication, illustrates the various
+deployment scenarios, and explains how to configure the system to
+provide replication and mirroring in your environment.</p>
+</div>
+<div class="sect2">
+<h3 id="replicated-volumes-vs-geo-replication"><a class="anchor" href="#replicated-volumes-vs-geo-replication"></a>Replicated Volumes vs Geo-replication</h3>
+<div class="paragraph">
+<p>The following table lists the difference between replicated volumes and
+geo-replication:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 11%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Replicated Volumes</th>
+<th class="tableblock halign-left valign-top">Geo-replication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mirrors data across clusters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mirrors data across geographically
+distributed clusters</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provides high-availability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ensures backing up of data for disaster
+recovery</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Synchronous replication (each and every file operation is sent across
+all the bricks)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asynchronous replication (checks for the changes in
+files periodically and syncs them on detecting differences)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="preparing-to-deploy-geo-replication"><a class="anchor" href="#preparing-to-deploy-geo-replication"></a>Preparing to Deploy Geo-replication</h3>
+<div class="paragraph">
+<p>This section provides an overview of the Geo-replication deployment
+scenarios, describes how you can check the minimum system requirements,
+and explores common deployment scenarios.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="exploring-geo-replication-deployment-scenarios"><a class="anchor" href="#exploring-geo-replication-deployment-scenarios"></a>Exploring Geo-replication Deployment Scenarios</h3>
+<div class="paragraph">
+<p>Geo-replication provides an incremental replication service over Local
+Area Networks (LANs), Wide Area Network (WANs), and across the Internet.
+This section illustrates the most common deployment scenarios for
+Geo-replication, including the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Geo-replication over LAN</p>
+</li>
+<li>
+<p>Geo-replication over WAN</p>
+</li>
+<li>
+<p>Geo-replication over the Internet</p>
+</li>
+<li>
+<p>Multi-site cascading Geo-replication</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Geo-replication over LAN</strong></p>
+</div>
+<div class="paragraph">
+<p>You can configure Geo-replication to mirror data over a Local Area
+Network.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://cloud.githubusercontent.com/assets/10970993/7412281/a542e724-ef5e-11e4-8207-9e018c1e9304.png" alt="geo-rep_lan"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Geo-replication over WAN</strong></p>
+</div>
+<div class="paragraph">
+<p>You can configure Geo-replication to replicate data over a Wide Area
+Network.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://cloud.githubusercontent.com/assets/10970993/7412292/c3816f76-ef5e-11e4-8daa-271f6efa1f58.png" alt="geo-rep_wan"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Geo-replication over Internet</strong></p>
+</div>
+<div class="paragraph">
+<p>You can configure Geo-replication to mirror data over the Internet.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://cloud.githubusercontent.com/assets/10970993/7412305/d8660050-ef5e-11e4-9d1b-54369fb1e43f.png" alt="geo-rep03_internet"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Multi-site cascading Geo-replication</strong></p>
+</div>
+<div class="paragraph">
+<p>You can configure Geo-replication to mirror data in a cascading fashion
+across multiple sites.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://cloud.githubusercontent.com/assets/10970993/7412320/05e131bc-ef5f-11e4-8580-a4dc592148ff.png" alt="geo-rep04_cascading"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="geo-replication-deployment-overview"><a class="anchor" href="#geo-replication-deployment-overview"></a>Geo-replication Deployment Overview</h3>
+<div class="paragraph">
+<p>Deploying Geo-replication involves the following steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Verify that your environment matches the minimum system requirement.</p>
+</li>
+<li>
+<p>Determine the appropriate deployment scenario.</p>
+</li>
+<li>
+<p>Start Geo-replication on master and slave systems, as required.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="checking-geo-replication-minimum-requirements"><a class="anchor" href="#checking-geo-replication-minimum-requirements"></a>Checking Geo-replication Minimum Requirements</h3>
+<div class="paragraph">
+<p>Before deploying GlusterFS Geo-replication, verify that your systems
+match the minimum requirements.</p>
+</div>
+<div class="paragraph">
+<p>The following table outlines the minimum requirements for both master
+and slave nodes within your environment:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 16%;">
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Master</th>
+<th class="tableblock halign-left valign-top">Slave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GNU/Linux</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GNU/Linux</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filesystem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GlusterFS 3.2 or higher</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GlusterFS 3.2 or higher (GlusterFS
+needs to be installed, but does not need to be running), ext3, ext4, or
+XFS (any other POSIX compliant file system would work, but has not been
+tested extensively)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python 2.4 (with ctypes external module), or Python 2.5 (or
+higher)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python 2.4 (with ctypes external module), or Python 2.5 (or
+higher)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secure shell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenSSH version 4.0 (or higher)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSH2-compliant daemon</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remote synchronization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rsync 3.0.7 or higher</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rsync 3.0.7 or higher</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FUSE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GlusterFS supported versions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GlusterFS supported versions</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="setting-up-the-environment-for-geo-replication"><a class="anchor" href="#setting-up-the-environment-for-geo-replication"></a>Setting Up the Environment for Geo-replication</h3>
+<div class="paragraph">
+<p><strong>Time Synchronization</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>On bricks of a geo-replication master volume, all the servers' time
+must be uniform. You are recommended to set up NTP (Network Time
+Protocol) service to keep the bricks sync in time and avoid out-of-time
+sync effect.</p>
+<div class="paragraph">
+<p>For example: In a Replicated volume where brick1 of the master is at
+12.20 hrs and brick 2 of the master is at 12.10 hrs with 10 minutes time
+lag, all the changes in brick2 between this period may go unnoticed
+during synchronization of files with Slave.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To setup Geo-replication for SSH</strong></p>
+</div>
+<div class="paragraph">
+<p>Password-less login has to be set up between the host machine (where
+geo-replication Start command will be issued) and the remote machine
+(where slave process should be launched through SSH).</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the node where geo-replication sessions are to be set up, run the
+following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># ssh-keygen -f /var/lib/glusterd/geo-replication/secret.pem</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Press Enter twice to avoid passphrase.</p>
+</div>
+</li>
+<li>
+<p>Run the following command on master for all the slave hosts:</p>
+<div class="literalblock">
+<div class="content">
+<pre># ssh-copy-id -i /var/lib/glusterd/geo-replication/secret.pem.pub @</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="setting-up-the-environment-for-a-secure-geo-replication-slave"><a class="anchor" href="#setting-up-the-environment-for-a-secure-geo-replication-slave"></a>Setting Up the Environment for a Secure Geo-replication Slave</h3>
+<div class="paragraph">
+<p>You can configure a secure slave using SSH so that master is granted a
+restricted access. With GlusterFS, you need not specify configuration
+parameters regarding the slave on the master-side configuration. For
+example, the master does not require the location of the rsync program
+on slave but the slave must ensure that rsync is in the PATH of the user
+which the master connects using SSH. The only information that master
+and slave have to negotiate are the slave-side user account, slave&#8217;s
+resources that master uses as slave resources, and the master&#8217;s public
+key. Secure access to the slave can be established using the following
+options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Restricting Remote Command Execution</p>
+</li>
+<li>
+<p>Using <code>Mountbroker</code> for Slaves</p>
+</li>
+<li>
+<p>Using IP based Access Control</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Backward Compatibility</strong></p>
+</div>
+<div class="paragraph">
+<p>Your existing Geo-replication environment will work with GlusterFS,
+except for the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The process of secure reconfiguration affects only the glusterfs
+instance on slave. The changes are transparent to master with the
+exception that you may have to change the SSH target to an unprivileged
+account on slave.</p>
+</li>
+<li>
+<p>The following are the some exceptions where this might not work:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Geo-replication URLs which specify the slave resource when
+configuring master will include the following special characters: space,
+*, ?, [;</p>
+</li>
+<li>
+<p>Slave must have a running instance of glusterd, even if there is no
+gluster volume among the mounted slave resources (that is, file tree
+slaves are used exclusively).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="restricting-remote-command-execution"><a class="anchor" href="#restricting-remote-command-execution"></a>Restricting Remote Command Execution</h4>
+<div class="paragraph">
+<p>If you restrict remote command execution, then the Slave audits commands
+coming from the master and the commands related to the given
+geo-replication session is allowed. The Slave also provides access only
+to the files within the slave resource which can be read or manipulated
+by the Master.</p>
+</div>
+<div class="paragraph">
+<p>To restrict remote command execution:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Identify the location of the gsyncd helper utility on Slave. This
+utility is installed in <code>PREFIX/libexec/glusterfs/gsyncd</code>, where PREFIX
+is a compile-time parameter of glusterfs. For example, <code>--prefix=PREFIX</code>
+to the configure script with the following common
+values`/usr, /usr/local, and /opt/glusterfs/glusterfs_version`.</p>
+</li>
+<li>
+<p>Ensure that command invoked from master to slave passed through the
+slave&#8217;s gsyncd utility.</p>
+<div class="paragraph">
+<p>You can use either of the following two options:
+* Set gsyncd with an absolute path as the shell for the account which
+the master connects through SSH. If you need to use a privileged
+account, then set it up by creating a new user with UID 0.
+* Setup key authentication with command enforcement to gsyncd. You must
+prefix the copy of master&#8217;s public key in the Slave account&#8217;s
+<code>authorized_keys</code> file with the following command:</p>
+</div>
+<div class="paragraph">
+<p>+
+<code>command=&lt;path to gsyncd&gt;</code>.</p>
+</div>
+<div class="paragraph">
+<p>+
+For example, <code>command="PREFIX/glusterfs/gsyncd" ssh-rsa AAAAB3Nza&#8230;&#8203;.</code></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="using-mountbroker-for-slaves"><a class="anchor" href="#using-mountbroker-for-slaves"></a>Using Mountbroker for Slaves</h4>
+<div class="paragraph">
+<p><code>mountbroker</code> is a new service of glusterd. This service allows an
+unprivileged process to own a GlusterFS mount by registering a label
+(and DSL (Domain-specific language) options ) with glusterd through a
+glusterd volfile. Using CLI, you can send a mount request to glusterd to
+receive an alias (symlink) of the mounted volume.</p>
+</div>
+<div class="paragraph">
+<p>A request from the agent , the unprivileged slave agents use the
+mountbroker service of glusterd to set up an auxiliary gluster mount for
+the agent in a special environment which ensures that the agent is only
+allowed to access with special parameters that provide administrative
+level access to the particular volume.</p>
+</div>
+<div class="paragraph">
+<p><strong>To setup an auxiliary gluster mount for the agent</strong>:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In all Slave nodes, create a new group. For example, <code>geogroup</code>.</p>
+</li>
+<li>
+<p>In all Slave nodes, create a unprivileged account. For example,
+<code>geoaccount</code>. Make it a member of <code>geogroup</code>.</p>
+</li>
+<li>
+<p>In all Slave nodes, Create a new directory owned by root and with
+permissions <em>0711.</em> For example, create a create mountbroker-root
+directory <code>/var/mountbroker-root</code>.</p>
+</li>
+<li>
+<p>In any one of Slave node, Run the following commands to add options
+to glusterd vol file(<code>/etc/glusterfs/glusterd.vol</code>) in rpm installations
+and <code>/usr/local/etc/glusterfs/glusterd.vol</code> in Source installation.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">gluster system:: execute mountbroker opt mountbroker-root /var/mountbroker-root
+gluster system:: execute mountbroker opt geo-replication-log-group geogroup
+gluster system:: execute mountbroker opt rpc-auth-allow-insecure on</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>In any one of the Slave node, Add Mountbroker user to glusterd vol
+file using,</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">gluster system:: execute mountbroker user geoaccount slavevol</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where slavevol is the Slave Volume name</p>
+</div>
+<div class="paragraph">
+<p>If you host multiple slave volumes on Slave, for each of them and add
+the following options to the volfile using,</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">gluster system:: execute mountbroker user geoaccount2 slavevol2
+gluster system:: execute mountbroker user geoaccount3 slavevol3</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To add multiple volumes per mountbroker user,</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">gluster system:: execute mountbroker user geoaccount1 slavevol11,slavevol12,slavevol13
+gluster system:: execute mountbroker user geoaccount2 slavevol21,slavevol22
+gluster system:: execute mountbroker user geoaccount3 slavevol31</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Restart <code>glusterd</code> service on all Slave nodes.</p>
+</li>
+<li>
+<p>Setup a passwdless SSH from one of the master node to the user on
+one of the slave node. For example, to geoaccount.</p>
+</li>
+<li>
+<p>Create a geo-replication relationship between master and slave to
+the user by running the following command on the master node:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">gluster volume geo-replication &lt;master_volume&gt; &lt;mountbroker_user&gt;@&lt;slave_host&gt;::&lt;slave_volume&gt;
+create push-pem [force]</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the slavenode, which is used to create relationship, run
+<code>/usr/libexec/glusterfs/set_geo_rep_pem_keys.sh</code> as a root with user
+name, master volume name, and slave volume names as the arguments.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="sh">/usr/libexec/glusterfs/set_geo_rep_pem_keys.sh &lt;mountbroker_user&gt; &lt;master_volume&gt; &lt;slave_volume&gt;</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="using-ip-based-access-control"><a class="anchor" href="#using-ip-based-access-control"></a>Using IP based Access Control</h4>
+<div class="paragraph">
+<p>You can use IP based access control method to provide access control for
+the slave resources using IP address. You can use method for both Slave
+and file tree slaves, but in the section, we are focusing on file tree
+slaves using this method.</p>
+</div>
+<div class="paragraph">
+<p>To set access control based on IP address for file tree slaves:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Set a general restriction for accessibility of file tree resources:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication '/*' config allow-network ::1,127.0.0.1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will refuse all requests for spawning slave agents except for
+requests initiated locally.</p>
+</div>
+</li>
+<li>
+<p>If you want the to lease file tree at <code>/data/slave-tree</code> to Master,
+enter the following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replicationconfig allow-network</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>MasterIP</code> is the IP address of Master. The slave agent spawn request
+from master will be accepted if it is executed at <code>/data/slave-tree</code>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If the Master side network configuration does not enable the Slave to
+recognize the exact IP address of Master, you can use CIDR notation to
+specify a subnet instead of a single IP address as MasterIP or even
+comma-separated lists of CIDR subnets.</p>
+</div>
+<div class="paragraph">
+<p>If you want to extend IP based access control to gluster slaves, use the
+following command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    # gluster volume geo-replication '*' config allow-network ::1,127.0.0.1</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="starting-geo-replication"><a class="anchor" href="#starting-geo-replication"></a>Starting Geo-replication</h3>
+<div class="paragraph">
+<p>This section describes how to configure and start Gluster
+Geo-replication in your storage environment, and verify that it is
+functioning correctly.</p>
+</div>
+<div class="sect3">
+<h4 id="starting-geo-replication-1"><a class="anchor" href="#starting-geo-replication-1"></a>Starting Geo-replication</h4>
+<div class="paragraph">
+<p>To start Gluster Geo-replication</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the following command to start geo-replication between the hosts:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication  start</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 example.com:/data/remote_dir start
+Starting geo-replication session between Volume1
+example.com:/data/remote_dir has been successful</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>You may need to configure the service before starting Gluster
+Geo-replication.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="verifying-successful-deployment"><a class="anchor" href="#verifying-successful-deployment"></a>Verifying Successful Deployment</h4>
+<div class="paragraph">
+<p>You can use the gluster command to verify the status of Gluster
+Geo-replication in your environment.</p>
+</div>
+<div class="paragraph">
+<p><strong>To verify the status Gluster Geo-replication</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verify the status by issuing the following command on host:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication  status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 example.com:/data/remote_dir status
+# gluster volume geo-replication Volume1 example.com:/data/remote_dir status
+MASTER    SLAVE                            STATUS
+______    ______________________________   ____________
+Volume1 root@example.com:/data/remote_dir  Starting....</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="displaying-geo-replication-status-information"><a class="anchor" href="#displaying-geo-replication-status-information"></a>Displaying Geo-replication Status Information</h4>
+<div class="paragraph">
+<p>You can display status information about a specific geo-replication
+master session, or a particular master-slave session, or all
+geo-replication sessions, as needed.</p>
+</div>
+<div class="paragraph">
+<p><strong>To display geo-replication status information</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the following command to display information of all
+geo-replication sessions:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 example.com:/data/remote_dir status</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the following command to display information of a particular
+master slave session:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication  status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example, to display information of Volume1 and
+example.com:/data/remote_dir</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 example.com:/data/remote_dir status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The status of the geo-replication between Volume1 and
+example.com:/data/remote_dir is displayed.</p>
+</div>
+</li>
+<li>
+<p>Display information of all geo-replication sessions belonging to a
+master</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication MASTER status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example, to display information of Volume1</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 example.com:/data/remote_dir status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The status of a session could be one of the following:</p>
+</div>
+</li>
+<li>
+<p><strong>Initializing</strong>: This is the initial phase of the Geo-replication
+session; it remains in this state for a minute in order to make sure no
+abnormalities are present.</p>
+</li>
+<li>
+<p><strong>Not Started</strong>: The geo-replication session is created, but not
+started.</p>
+</li>
+<li>
+<p><strong>Active</strong>: The gsync daemon in this node is active and syncing the
+data.</p>
+</li>
+<li>
+<p><strong>Passive</strong>: A replica pair of the active node. The data
+synchronization is handled by active node. Hence, this node does not
+sync any data.</p>
+</li>
+<li>
+<p><strong>Faulty</strong>: The geo-replication session has experienced a problem, and
+the issue needs to be investigated further.</p>
+</li>
+<li>
+<p><strong>Stopped</strong>: The geo-replication session has stopped, but has not been
+deleted.</p>
+<div class="paragraph">
+<p>The Crawl Status can be one of the following:</p>
+</div>
+</li>
+<li>
+<p><strong>Changelog Crawl</strong>: The changelog translator has produced the
+changelog and that is being consumed by gsyncd daemon to sync data.</p>
+</li>
+<li>
+<p><strong>Hybrid Crawl</strong>: The gsyncd daemon is crawling the glusterFS file
+system and generating pseudo changelog to sync data.</p>
+</li>
+<li>
+<p><strong>Checkpoint Status</strong>: Displays the status of the checkpoint, if set.
+Otherwise, it displays as N/A.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="configuring-geo-replication"><a class="anchor" href="#configuring-geo-replication"></a>Configuring Geo-replication</h3>
+<div class="paragraph">
+<p>To configure Gluster Geo-replication</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the following command at the Gluster command line:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication  config [options]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p>Use the following command to view list of all option/value pair:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 example.com:/data/remote_dir config</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="configurable-options"><a class="anchor" href="#configurable-options"></a>Configurable Options</h5>
+<div class="paragraph">
+<p>The following table provides an overview of the configurable options for
+a geo-replication setting:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 11%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gluster-log-file LOGFILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The path to the geo-replication glusterfs log
+file.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gluster-log-level LOGFILELEVEL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The log level for glusterfs processes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">log-file LOGFILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The path to the geo-replication log file.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">log-level LOGFILELEVEL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The log level for geo-replication.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ssh-command COMMAND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The SSH command to connect to the remote machine
+(the default is SSH).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rsync-command COMMAND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The rsync command to use for synchronizing the
+files (the default is rsync).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">use-tarssh true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The use-tarssh command allows tar over Secure Shell
+protocol. Use this option to handle workloads of files that have not
+undergone edits.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">volume_id=UID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The command to delete the existing master UID for the
+intermediate/slave node.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">timeout SECONDS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timeout period in seconds.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sync-jobs N</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of simultaneous files/directories that can be
+synchronized.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ignore-deletes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If this option is set to 1, a file deleted on the
+master will not trigger a delete operation on the slave. As a result,
+the slave will remain as a superset of the master and can be used to
+recover the master in the event of a crash and/or accidental delete.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">checkpoint [LABEL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">now]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="stopping-geo-replication"><a class="anchor" href="#stopping-geo-replication"></a>Stopping Geo-replication</h3>
+<div class="paragraph">
+<p>You can use the gluster command to stop Gluster Geo-replication (syncing
+of data from Master to Slave) in your environment.</p>
+</div>
+<div class="paragraph">
+<p><strong>To stop Gluster Geo-replication</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the following command to stop geo-replication between the hosts:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication  stop</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 example.com:/data/remote_dir stop
+Stopping geo-replication session between Volume1 and
+example.com:/data/remote_dir has been successful</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="restoring-data-from-the-slave"><a class="anchor" href="#restoring-data-from-the-slave"></a>Restoring Data from the Slave</h3>
+<div class="paragraph">
+<p>You can restore data from the slave to the master volume, whenever the
+master volume becomes faulty for reasons like hardware failure.</p>
+</div>
+<div class="paragraph">
+<p>The example in this section assumes that you are using the Master Volume
+(Volume1) with the following configuration:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>machine1# gluster volume info
+Type: Distribute
+Status: Started
+Number of Bricks: 2
+Transport-type: tcp
+Bricks:
+Brick1: machine1:/export/dir16
+Brick2: machine2:/export/dir16
+Options Reconfigured:
+geo-replication.indexing: on</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The data is syncing from master volume (Volume1) to slave directory
+(example.com:/data/remote_dir). To view the status of this
+geo-replication session run the following command on Master:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication Volume1 root@example.com:/data/remote_dir status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Before Failure</strong></p>
+</div>
+<div class="paragraph">
+<p>Assume that the Master volume had 100 files and was mounted at
+/mnt/gluster on one of the client machines (client). Run the following
+command on Client machine to view the list of files:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>client# ls /mnt/gluster | wc –l
+100</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The slave directory (example.com) will have same data as in the master
+volume and same can be viewed by running the following command on slave:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>example.com# ls /data/remote_dir/ | wc –l
+100</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>After Failure</strong></p>
+</div>
+<div class="paragraph">
+<p>If one of the bricks (machine2) fails, then the status of
+Geo-replication session is changed from "OK" to "Faulty". To view the
+status of this geo-replication session run the following command on
+Master:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    # gluster volume geo-replication Volume1 root@example.com:/data/remote_dir status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Machine2 is failed and now you can see discrepancy in number of files
+between master and slave. Few files will be missing from the master
+volume but they will be available only on slave as shown below.</p>
+</div>
+<div class="paragraph">
+<p>Run the following command on Client:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    client # ls /mnt/gluster | wc –l
+    52</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Run the following command on slave (example.com):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    Example.com# # ls /data/remote_dir/ | wc –l
+    100</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To restore data from the slave machine</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use the following command to stop all Master&#8217;s geo-replication
+sessions:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication  stop</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>machine1# gluster volume geo-replication Volume1
+example.com:/data/remote_dir stop
+
+Stopping geo-replication session between Volume1 &amp;
+example.com:/data/remote_dir has been successful</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>Repeat `# gluster volume geo-replication  stop`command on all active
+geo-replication sessions of master volume.</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p>Use the following command to replace the faulty brick in the master:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume replace-brick  commit force</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>machine1# gluster volume replace-brick Volume1 machine2:/export/dir16 machine3:/export/dir16 commit force
+Replace-brick commit successful</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the following command to verify the migration of brick by
+viewing the volume info:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume info</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>machine1# gluster volume info
+Volume Name: Volume1
+Type: Distribute
+Status: Started
+Number of Bricks: 2
+Transport-type: tcp
+Bricks:
+Brick1: machine1:/export/dir16
+Brick2: machine3:/export/dir16
+Options Reconfigured:
+geo-replication.indexing: on</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run rsync command manually to sync data from slave to master
+volume&#8217;s client (mount point).</p>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>example.com# rsync -PavhS --xattrs --ignore-existing /data/remote_dir/ client:/mnt/gluster</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Verify that the data is synced by using the following command:</p>
+</div>
+<div class="paragraph">
+<p>On master volume, run the following command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Client # ls | wc –l
+100</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>On the Slave run the following command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>example.com# ls /data/remote_dir/ | wc –l
+100</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now Master volume and Slave directory is synced.</p>
+</div>
+</li>
+<li>
+<p>Use the following command to restart geo-replication session from
+master to slave:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication  start</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>machine1# gluster volume geo-replication Volume1
+example.com:/data/remote_dir start
+Starting geo-replication session between Volume1 &amp;
+example.com:/data/remote_dir has been successful</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="best-practices"><a class="anchor" href="#best-practices"></a>Best Practices</h3>
+<div class="paragraph">
+<p><strong>Manually Setting Time</strong></p>
+</div>
+<div class="paragraph">
+<p>If you have to change the time on your bricks manually, then you must
+set uniform time on all bricks. Setting time backward corrupts the
+geo-replication index, so the recommended way to set the time manually
+is:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Stop geo-replication between the master and slave using the
+following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication stop</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Stop the geo-replication indexing using the following command:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume set  geo-replication.indexing of</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Set uniform time on all bricks.</p>
+</li>
+<li>
+<p>Use the following command to restart your geo-replication session:</p>
+<div class="literalblock">
+<div class="content">
+<pre># gluster volume geo-replication start</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Running Geo-replication commands in one system</strong></p>
+</div>
+<div class="paragraph">
+<p>It is advisable to run the geo-replication commands in one of the bricks
+in the trusted storage pool. This is because, the log files for the
+geo-replication session would be stored in the <strong>Server</strong> where the
+Geo-replication start is initiated. Hence it would be easier to locate
+the log-files when required.</p>
+</div>
+<div class="paragraph">
+<p><strong>Isolation</strong></p>
+</div>
+<div class="paragraph">
+<p>Geo-replication slave operation is not sandboxed as of now and is ran as
+a privileged service. So for the security reason, it is advised to
+create a sandbox environment (dedicated machine / dedicated virtual
+machine / chroot/container type solution) by the administrator to run
+the geo-replication slave in it. Enhancement in this regard will be
+available in follow-up minor release.</p>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

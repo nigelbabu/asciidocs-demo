@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | RDMA Transport</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        RDMA Transport
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class=" active" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Introduction</h2>
+        </div>
+        <div class="sect1">
+<h2 id="introduction"><a class="anchor" href="#introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>GlusterFS supports using RDMA protocol for communication between
+glusterfs clients and glusterfs bricks. GlusterFS clients include FUSE
+client, libgfapi clients(Samba and NFS-Ganesha included), gNFS server
+and other glusterfs processes that communicate with bricks like
+self-heal daemon, quotad, rebalance process etc.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+As of now only FUSE client and gNFS server would support RDMA
+transport.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
++
+NFS client to gNFS Server/NFS Ganesha Server communication would still
+happen over tcp.<br>
+CIFS Clients/Windows Clients to Samba Server communication would still
+happen over tcp.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="setup"><a class="anchor" href="#setup"></a>Setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please refer to these external documentation to setup RDMA on your
+machines<br>
+<a href="http://pkg-ofed.alioth.debian.org/howto/infiniband-howto.html" class="bare">http://pkg-ofed.alioth.debian.org/howto/infiniband-howto.html</a><br>
+<a href="http://people.redhat.com/dledford/infiniband_get_started.html" class="bare">http://people.redhat.com/dledford/infiniband_get_started.html</a></p>
+</div>
+<div class="sect2">
+<h3 id="creating-trusted-storage-pool"><a class="anchor" href="#creating-trusted-storage-pool"></a>Creating Trusted Storage Pool</h3>
+<div class="paragraph">
+<p>All the servers in the Trusted Storage Pool must have RDMA devices if
+either RDMA or TCP,RDMA volumes are created in the storage pool.<br>
+The peer probe must be performed using IP/hostname assigned to the RDMA
+device.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ports-and-firewall"><a class="anchor" href="#ports-and-firewall"></a>Ports and Firewall</h3>
+<div class="paragraph">
+<p>Process glusterd will listen on both tcp and rdma if rdma device is
+found. Port used for rdma is 24008. Similarly, brick processes will also
+listen on two ports for a volume created with transport "tcp,rdma".</p>
+</div>
+<div class="paragraph">
+<p>Make sure you update the firewall to accept packets on these ports.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="gluster-volume-create"><a class="anchor" href="#gluster-volume-create"></a>Gluster Volume Create</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A volume can support one or more transport types for communication
+between clients and brick processes. There are three types of supported
+transport, which are, tcp, rdma, and tcp,rdma.</p>
+</div>
+<div class="paragraph">
+<p>Example: To create a distributed volume with four storage servers over
+InfiniBand:</p>
+</div>
+<div class="paragraph">
+<p><code># gluster volume create test-volume transport rdma server1:/exp1 server2:/exp2 server3:/exp3 server4:/exp4</code><br>
+Creation of test-volume has been successful<br>
+Please start the volume to access data.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="changing-transport-of-volume"><a class="anchor" href="#changing-transport-of-volume"></a>Changing Transport of Volume</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To change the supported transport types of a existing volume, follow the
+procedure:<br>
+NOTE: This is possible only if the volume was created with IP/hostname
+assigned to RDMA device.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Unmount the volume on all the clients using the following command:<br>
+<code># umount mount-point</code><br></p>
+</li>
+<li>
+<p>Stop the volumes using the following command:<br>
+<code># gluster volume stop volname</code><br></p>
+</li>
+<li>
+<p>Change the transport type.<br>
+For example, to enable both tcp and rdma execute the followimg
+command:<br>
+<code># gluster volume set volname config.transport tcp,rdma</code><br></p>
+</li>
+<li>
+<p>Mount the volume on all the clients.<br>
+For example, to mount using rdma transport, use the following command:<br>
+<code># mount -t glusterfs -o transport=rdma server1:/test-volume /mnt/glusterfs</code></p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
++
+config.transport option does not have a entry in help of gluster cli.<br>
+<code>#gluster vol set help | grep config.transport</code><br>
+However, the key is a valid one.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mounting-a-volume-using-rdma"><a class="anchor" href="#mounting-a-volume-using-rdma"></a>Mounting a Volume using RDMA</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use the mount option "transport" to specify the transport type
+that FUSE client must use to communicate with bricks. If the volume was
+created with only one transport type, then that becomes the default when
+no value is specified. In case of tcp,rdma volume, tcp is the default.</p>
+</div>
+<div class="paragraph">
+<p>For example, to mount using rdma transport, use the following command:<br>
+<code># mount -t glusterfs -o transport=rdma server1:/test-volume /mnt/glusterfs</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="transport-used-by-auxillary-processes"><a class="anchor" href="#transport-used-by-auxillary-processes"></a>Transport used by auxillary processes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All the auxillary processes like self-heal daemon, rebalance process etc
+use the default transport.In case you have a tcp,rdma volume it will use
+tcp.<br>
+In case of rdma volume, rdma will be used.<br>
+Configuration options to select transport used by these processes when
+volume is tcp,rdma are not yet available and will be coming in later
+releases.</p>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

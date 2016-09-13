@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Access Control Lists</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Access Control Lists
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class=" active" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>POSIX Access Control Lists</h2>
+        </div>
+        <div class="sect1">
+<h2 id="posix-access-control-lists"><a class="anchor" href="#posix-access-control-lists"></a>POSIX Access Control Lists</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>POSIX Access Control Lists (ACLs) allows you to assign different
+permissions for different users or groups even though they do not
+correspond to the original owner or the owning group.</p>
+</div>
+<div class="paragraph">
+<p>For example: User john creates a file but does not want to allow anyone
+to do anything with this file, except another user, antony (even though
+there are other users that belong to the group john).</p>
+</div>
+<div class="paragraph">
+<p>This means, in addition to the file owner, the file group, and others,
+additional users and groups can be granted or denied access by using
+POSIX ACLs.</p>
+</div>
+<div class="sect2">
+<h3 id="activating-posix-acls-support"><a class="anchor" href="#activating-posix-acls-support"></a>Activating POSIX ACLs Support</h3>
+<div class="paragraph">
+<p>To use POSIX ACLs for a file or directory, the partition of the file or
+directory must be mounted with POSIX ACLs support.</p>
+</div>
+<div class="sect3">
+<h4 id="activating-posix-acls-support-on-sever"><a class="anchor" href="#activating-posix-acls-support-on-sever"></a>Activating POSIX ACLs Support on Sever</h4>
+<div class="paragraph">
+<p>To mount the backend export directories for POSIX ACLs support, use the
+following command:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -o acl</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -o acl /dev/sda1 /export1</code></p>
+</div>
+<div class="paragraph">
+<p>Alternatively, if the partition is listed in the /etc/fstab file, add
+the following entry for the partition to include the POSIX ACLs option:</p>
+</div>
+<div class="paragraph">
+<p><code>LABEL=/work /export1 ext3 rw, acl 14</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="activating-posix-acls-support-on-client"><a class="anchor" href="#activating-posix-acls-support-on-client"></a>Activating POSIX ACLs Support on Client</h4>
+<div class="paragraph">
+<p>To mount the glusterfs volumes for POSIX ACLs support, use the following
+command:</p>
+</div>
+<div class="paragraph">
+<p><code># mount –t glusterfs -o acl</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -t glusterfs -o acl 198.192.198.234:glustervolume /mnt/gluster</code></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="setting-posix-acls"><a class="anchor" href="#setting-posix-acls"></a>Setting POSIX ACLs</h3>
+<div class="paragraph">
+<p>You can set two types of POSIX ACLs, that is, access ACLs and default
+ACLs. You can use access ACLs to grant permission for a specific file or
+directory. You can use default ACLs only on a directory but if a file
+inside that directory does not have an ACLs, it inherits the permissions
+of the default ACLs of the directory.</p>
+</div>
+<div class="paragraph">
+<p>You can set ACLs for per user, per group, for users not in the user
+group for the file, and via the effective right mask.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="setting-access-acls"><a class="anchor" href="#setting-access-acls"></a>Setting Access ACLs</h3>
+<div class="paragraph">
+<p>You can apply access ACLs to grant permission for both files and
+directories.</p>
+</div>
+<div class="paragraph">
+<p><strong>To set or modify Access ACLs</strong></p>
+</div>
+<div class="paragraph">
+<p>You can set or modify access ACLs use the following command:</p>
+</div>
+<div class="paragraph">
+<p><code># setfacl –m  file</code></p>
+</div>
+<div class="paragraph">
+<p>The ACL entry types are the POSIX ACLs representations of owner, group,
+and other.</p>
+</div>
+<div class="paragraph">
+<p>Permissions must be a combination of the characters <code>r</code> (read), <code>w</code>
+(write), and <code>x</code> (execute). You must specify the ACL entry in the
+following format and can specify multiple entry types separated by
+commas.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ACL Entry</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u:uid:&lt;permission&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the access ACLs for a user. You can specify
+user name or UID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">g:gid:&lt;permission&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the access ACLs for a group. You can specify
+group name or GID.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m:&lt;permission&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the effective rights mask. The mask is the
+combination of all access permissions of the owning group and all of the
+user and group entries.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">o:&lt;permission&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the access ACLs for users other than the ones in
+the group for the file.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If a file or directory already has an POSIX ACLs, and the setfacl
+command is used, the additional permissions are added to the existing
+POSIX ACLs or the existing rule is modified.</p>
+</div>
+<div class="paragraph">
+<p>For example, to give read and write permissions to user antony:</p>
+</div>
+<div class="paragraph">
+<p><code># setfacl -m u:antony:rw /mnt/gluster/data/testfile</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="setting-default-acls"><a class="anchor" href="#setting-default-acls"></a>Setting Default ACLs</h3>
+<div class="paragraph">
+<p>You can apply default ACLs only to directories. They determine the
+permissions of a file system objects that inherits from its parent
+directory when it is created.</p>
+</div>
+<div class="paragraph">
+<p>To set default ACLs</p>
+</div>
+<div class="paragraph">
+<p>You can set default ACLs for files and directories using the following
+command:</p>
+</div>
+<div class="paragraph">
+<p><code># setfacl –m –-set</code></p>
+</div>
+<div class="paragraph">
+<p>Permissions must be a combination of the characters r (read), w (write),
+and x (execute). Specify the ACL entry_type as described below,
+separating multiple entry types with commas.</p>
+</div>
+<div class="paragraph">
+<p>u:<em>user_name:permissons</em> Sets the access ACLs for a user. Specify the
+user name, or the UID.</p>
+</div>
+<div class="paragraph">
+<p>g:<em>group_name:permissions</em> Sets the access ACLs for a group. Specify
+the group name, or the GID.</p>
+</div>
+<div class="paragraph">
+<p>m:<em>permission</em> Sets the effective rights mask. The mask is the
+combination of all access permissions of the owning group, and all user
+and group entries.</p>
+</div>
+<div class="paragraph">
+<p>o:<em>permissions</em> Sets the access ACLs for users other than the ones in
+the group for the file.</p>
+</div>
+<div class="paragraph">
+<p>For example, to set the default ACLs for the /data directory to read for
+users not in the user group:</p>
+</div>
+<div class="paragraph">
+<p><code># setfacl –m --set o::r /mnt/gluster/data</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>An access ACLs set for an individual file can override the default ACLs
+permissions.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>Effects of a Default ACLs</strong></p>
+</div>
+<div class="paragraph">
+<p>The following are the ways in which the permissions of a directory&#8217;s
+default ACLs are passed to the files and subdirectories in it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A subdirectory inherits the default ACLs of the parent directory both
+as its default ACLs and as an access ACLs.</p>
+</li>
+<li>
+<p>A file inherits the default ACLs as its access ACLs.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="retrieving-posix-acls"><a class="anchor" href="#retrieving-posix-acls"></a>Retrieving POSIX ACLs</h3>
+<div class="paragraph">
+<p>You can view the existing POSIX ACLs for a file or directory.</p>
+</div>
+<div class="paragraph">
+<p><strong>To view existing POSIX ACLs</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View the existing access ACLs of a file using the following command:</p>
+<div class="paragraph">
+<p><code># getfacl</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view the existing POSIX ACLs for sample.jpg</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># getfacl /mnt/gluster/data/test/sample.jpg
+# owner: antony
+# group: antony
+user::rw-
+group::rw-
+other::r--</pre>
+</div>
+</div>
+</li>
+<li>
+<p>View the default ACLs of a directory using the following command:</p>
+<div class="paragraph">
+<p><code># getfacl</code></p>
+</div>
+<div class="paragraph">
+<p>For example, to view the existing ACLs for /data/doc</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># getfacl /mnt/gluster/data/doc
+# owner: antony
+# group: antony
+user::rw-
+user:john:r--
+group::r--
+mask::r--
+other::r--
+default:user::rwx
+default:user:antony:rwx
+default:group::r-x
+default:mask::rwx
+default:other::r-x</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="removing-posix-acls"><a class="anchor" href="#removing-posix-acls"></a>Removing POSIX ACLs</h3>
+<div class="paragraph">
+<p>To remove all the permissions for a user, groups, or others, use the
+following command:</p>
+</div>
+<div class="paragraph">
+<p><code># setfacl -x</code></p>
+</div>
+<div class="sect4">
+<h5 id="setfaclentry_type-options"><a class="anchor" href="#setfaclentry_type-options"></a>setfaclentry_type Options</h5>
+<div class="paragraph">
+<p>The ACL entry_type translates to the POSIX ACL representations of owner,
+group, and other.</p>
+</div>
+<div class="paragraph">
+<p>Permissions must be a combination of the characters r (read), w (write),
+and x (execute). Specify the ACL entry_type as described below,
+separating multiple entry types with commas.</p>
+</div>
+<div class="paragraph">
+<p>u:<em>user_name</em> Sets the access ACLs for a user. Specify the user name,
+or the UID.</p>
+</div>
+<div class="paragraph">
+<p>g:<em>group_name</em> Sets the access ACLs for a group. Specify the group
+name, or the GID.</p>
+</div>
+<div class="paragraph">
+<p>m:<em>permission</em> Sets the effective rights mask. The mask is the
+combination of all access permissions of the owning group, and all user
+and group entries.</p>
+</div>
+<div class="paragraph">
+<p>o:<em>permissions</em> Sets the access ACLs for users other than the ones in
+the group for the file.</p>
+</div>
+<div class="paragraph">
+<p>For example, to remove all permissions from the user antony:</p>
+</div>
+<div class="paragraph">
+<p><code># setfacl -x u:antony /mnt/gluster/data/test-file</code></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="samba-and-acls"><a class="anchor" href="#samba-and-acls"></a>Samba and ACLs</h3>
+<div class="paragraph">
+<p>If you are using Samba to access GlusterFS FUSE mount, then POSIX ACLs
+are enabled by default. Samba has been compiled with the
+<code>--with-acl-support</code> option, so no special flags are required when
+accessing or mounting a Samba share.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nfs-and-acls"><a class="anchor" href="#nfs-and-acls"></a>NFS and ACLs</h3>
+<div class="paragraph">
+<p>Currently GlusterFS supports POSIX ACL configuration through NFS mount,
+i.e. setfacl and getfacl commands work through NFS mount.</p>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

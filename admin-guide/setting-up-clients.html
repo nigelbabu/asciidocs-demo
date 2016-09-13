@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Setting up Clients</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Setting up Clients
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class="" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class=" active" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Accessing Data - Setting Up GlusterFS Client</h2>
+        </div>
+        <div class="sect1">
+<h2 id="accessing-data---setting-up-glusterfs-client"><a class="anchor" href="#accessing-data---setting-up-glusterfs-client"></a>Accessing Data - Setting Up GlusterFS Client</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can access gluster volumes in multiple ways. You can use Gluster
+Native Client method for high concurrency, performance and transparent
+failover in GNU/Linux clients. You can also use NFS v3 to access gluster
+volumes. Extensive testing has be done on GNU/Linux clients and NFS
+implementation in other operating system, such as FreeBSD, and Mac OS X,
+as well as Windows 7 (Professional and Up) and Windows Server 2003.
+Other NFS client implementations may work with gluster NFS server.</p>
+</div>
+<div class="paragraph">
+<p>You can use CIFS to access volumes when using Microsoft Windows as well
+as SAMBA clients. For this access method, Samba packages need to be
+present on the client side.</p>
+</div>
+<div class="sect2">
+<h3 id="gluster-native-client"><a class="anchor" href="#gluster-native-client"></a>Gluster Native Client</h3>
+<div class="paragraph">
+<p>The Gluster Native Client is a FUSE-based client running in user space.
+Gluster Native Client is the recommended method for accessing volumes
+when high concurrency and high write performance is required.</p>
+</div>
+<div class="paragraph">
+<p>This section introduces the Gluster Native Client and explains how to
+install the software on client machines. This section also describes how
+to mount volumes on clients (both manually and automatically) and how to
+verify that the volume has mounted successfully.</p>
+</div>
+<div class="sect3">
+<h4 id="installing-the-gluster-native-client"><a class="anchor" href="#installing-the-gluster-native-client"></a>Installing the Gluster Native Client</h4>
+<div class="paragraph">
+<p>Before you begin installing the Gluster Native Client, you need to
+verify that the FUSE module is loaded on the client and has access to
+the required modules as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add the FUSE loadable kernel module (LKM) to the Linux kernel:</p>
+<div class="paragraph">
+<p><code># modprobe fuse</code></p>
+</div>
+</li>
+<li>
+<p>Verify that the FUSE module is loaded:</p>
+<div class="paragraph">
+<p><code># dmesg | grep -i fuse</code> <code>fuse init (API version 7.13)</code></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="installing-on-red-hat-package-manager-rpm-distributions"><a class="anchor" href="#installing-on-red-hat-package-manager-rpm-distributions"></a>Installing on Red Hat Package Manager (RPM) Distributions</h4>
+<div class="paragraph">
+<p>To install Gluster Native Client on RPM distribution-based systems</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install required prerequisites on the client using the following
+command:</p>
+<div class="paragraph">
+<p><code>$ sudo yum -y install openssh-server wget fuse fuse-libs openib libibverbs</code></p>
+</div>
+</li>
+<li>
+<p>Ensure that TCP and UDP ports 24007 and 24008 are open on all
+Gluster servers. Apart from these ports, you need to open one port for
+each brick starting from port 49152 (instead of 24009 onwards as with
+previous releases). The brick ports assignment scheme is now compliant
+with IANA guidelines. For example: if you have five bricks, you need to
+have ports 49152 to 49156 open.</p>
+<div class="paragraph">
+<p>You can use the following chains with iptables:</p>
+</div>
+<div class="paragraph">
+<p><code>$ sudo iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 24007:24008 -j ACCEPT</code>
+<code>$ sudo iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 49152:49156 -j ACCEPT</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>If you already have iptable chains, make sure that the above ACCEPT
+rules precede the DROP rules. This can be achieved by providing a lower
+rule number than the DROP rule.</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p>Download the latest glusterfs, glusterfs-fuse, and glusterfs-rdma
+RPM files to each client. The glusterfs package contains the Gluster
+Native Client. The glusterfs-fuse package contains the FUSE translator
+required for mounting on client systems and the glusterfs-rdma packages
+contain OpenFabrics verbs RDMA module for Infiniband.</p>
+<div class="paragraph">
+<p>You can download the software at
+<a href="http://www.gluster.org/download/">GlusterFS download page</a>.</p>
+</div>
+</li>
+<li>
+<p>Install Gluster Native Client on the client.</p>
+<div class="paragraph">
+<p><code>$ sudo rpm -i glusterfs-3.3.0qa30-1.x86_64.rpm</code>
+<code>$ sudo rpm -i glusterfs-fuse-3.3.0qa30-1.x86_64.rpm</code>
+<code>$ sudo rpm -i glusterfs-rdma-3.3.0qa30-1.x86_64.rpm</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>The RDMA module is only required when using Infiniband.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="installing-on-debian-based-distributions"><a class="anchor" href="#installing-on-debian-based-distributions"></a>Installing on Debian-based Distributions</h4>
+<div class="paragraph">
+<p>To install Gluster Native Client on Debian-based distributions</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install OpenSSH Server on each client using the following command:</p>
+<div class="paragraph">
+<p><code>$ sudo apt-get install openssh-server vim wget</code></p>
+</div>
+</li>
+<li>
+<p>Download the latest GlusterFS .deb file and checksum to each client.</p>
+<div class="paragraph">
+<p>You can download the software at
+<a href="http://www.gluster.org/download/">GlusterFS download page</a>.</p>
+</div>
+</li>
+<li>
+<p>For each .deb file, get the checksum (using the following command)
+and compare it against the checksum for that file in the md5sum file.</p>
+<div class="paragraph">
+<p><code>$ md5sum GlusterFS_DEB_file.deb</code></p>
+</div>
+<div class="paragraph">
+<p>The md5sum of the packages is available at:
+<a href="http://download.gluster.com/pub/gluster/glusterfs">GlusterFS download
+page</a></p>
+</div>
+</li>
+<li>
+<p>Uninstall GlusterFS v3.1 (or an earlier version) from the client
+using the following command:</p>
+<div class="paragraph">
+<p><code>$ sudo dpkg -r glusterfs</code></p>
+</div>
+<div class="paragraph">
+<p>(Optional) Run `$ sudo dpkg -purge glusterfs`to purge the configuration
+files.</p>
+</div>
+</li>
+<li>
+<p>Install Gluster Native Client on the client using the following
+command:</p>
+<div class="paragraph">
+<p><code>$ sudo dpkg -i GlusterFS_DEB_file</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>$ sudo dpkg -i glusterfs-3.3.x.deb</code></p>
+</div>
+</li>
+<li>
+<p>Ensure that TCP and UDP ports 24007 and 24008 are open on all
+Gluster servers. Apart from these ports, you need to open one port for
+each brick starting from port 49152 (instead of 24009 onwards as with
+previous releases). The brick ports assignment scheme is now compliant
+with IANA guidelines. For example: if you have five bricks, you need to
+have ports 49152 to 49156 open.</p>
+<div class="paragraph">
+<p>You can use the following chains with iptables:</p>
+</div>
+<div class="paragraph">
+<p><code>$ sudo iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 24007:24008 -j ACCEPT</code>
+<code>$ sudo iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 49152:49156 -j ACCEPT</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>If you already have iptable chains, make sure that the above ACCEPT
+rules precede the DROP rules. This can be achieved by providing a lower
+rule number than the DROP rule.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="performing-a-source-installation"><a class="anchor" href="#performing-a-source-installation"></a>Performing a Source Installation</h4>
+<div class="paragraph">
+<p>To build and install Gluster Native Client from the source code</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a new directory using the following commands:</p>
+<div class="paragraph">
+<p><code># mkdir glusterfs</code> <code># cd glusterfs</code></p>
+</div>
+</li>
+<li>
+<p>Download the source code.</p>
+<div class="paragraph">
+<p>You can download the source at <a href="http://www.gluster.org/download/" class="bare">http://www.gluster.org/download/</a>.</p>
+</div>
+</li>
+<li>
+<p>Extract the source code using the following command:</p>
+<div class="paragraph">
+<p><code># tar -xvzf SOURCE-FILE</code></p>
+</div>
+</li>
+<li>
+<p>Run the configuration utility using the following command:</p>
+<div class="paragraph">
+<p><code># ./configure</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>GlusterFS configure summary
+===========================
+FUSE client : yes
+Infiniband verbs : yes
+epoll IO multiplex : yes
+argp-standalone : no
+fusermount : no
+readline : yes</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The configuration summary shows the components that will be built with
+Gluster Native Client.</p>
+</div>
+</li>
+<li>
+<p>Build the Gluster Native Client software using the following
+commands:</p>
+<div class="paragraph">
+<p><code># make</code> <code># make install</code></p>
+</div>
+</li>
+<li>
+<p>Verify that the correct version of Gluster Native Client is
+installed, using the following command:</p>
+<div class="paragraph">
+<p><code># glusterfs –-version</code></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="mounting-volumes"><a class="anchor" href="#mounting-volumes"></a>Mounting Volumes</h3>
+<div class="paragraph">
+<p>After installing the Gluster Native Client, you need to mount Gluster
+volumes to access data. There are two methods you can choose:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#manual-mount">Manually Mounting Volumes</a></p>
+</li>
+<li>
+<p><a href="#auto-mount">Automatically Mounting Volumes</a></p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>Server names selected during creation of Volumes should be resolvable in
+the client machine. You can use appropriate /etc/hosts entries or DNS
+server to resolve server names to IP addresses.</p>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>### Manually Mounting Volumes</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To mount a volume, use the following command:</p>
+<div class="paragraph">
+<p><code># mount -t glusterfs HOSTNAME-OR-IPADDRESS:/VOLNAME MOUNTDIR</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -t glusterfs server1:/test-volume /mnt/glusterfs</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>The server specified in the mount command is only used to fetch the
+gluster configuration volfile describing the volume name. Subsequently,
+the client will communicate directly with the servers mentioned in the
+volfile (which might not even include the one used for mount).</p>
+</div>
+<div class="paragraph">
+<p>If you see a usage message like "Usage: mount.glusterfs", mount usually
+requires you to create a directory to be used as the mount point. Run
+"mkdir /mnt/glusterfs" before you attempt to run the mount command
+listed above.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Mounting Options</strong></p>
+</div>
+<div class="paragraph">
+<p>You can specify the following options when using the
+<code>mount -t glusterfs</code> command. Note that you need to separate all options
+with commas.</p>
+</div>
+<div class="paragraph">
+<p>backupvolfile-server=server-name</p>
+</div>
+<div class="paragraph">
+<p>volfile-max-fetch-attempts=number of attempts</p>
+</div>
+<div class="paragraph">
+<p>log-level=loglevel</p>
+</div>
+<div class="paragraph">
+<p>log-file=logfile</p>
+</div>
+<div class="paragraph">
+<p>transport=transport-type</p>
+</div>
+<div class="paragraph">
+<p>direct-io-mode=[enable|disable]</p>
+</div>
+<div class="paragraph">
+<p>use-readdirp=[yes|no]</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -t glusterfs -o backupvolfile-server=volfile_server2,use-readdirp=no,volfile-max-fetch-attempts=2,log-level=WARNING,log-file=/var/log/gluster.log server1:/test-volume /mnt/glusterfs</code></p>
+</div>
+<div class="paragraph">
+<p>If <code>backupvolfile-server</code> option is added while mounting fuse client,
+when the first volfile server fails, then the server specified in
+<code>backupvolfile-server</code> option is used as volfile server to mount the
+client.</p>
+</div>
+<div class="paragraph">
+<p>In <code>volfile-max-fetch-attempts=X</code> option, specify the number of attempts
+to fetch volume files while mounting a volume. This option is useful
+when you mount a server with multiple IP addresses or when round-robin
+DNS is configured for the server-name..</p>
+</div>
+<div class="paragraph">
+<p>If <code>use-readdirp</code> is set to ON, it forces the use of readdirp mode in
+fuse kernel module</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>### Automatically Mounting Volumes</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can configure your system to automatically mount the Gluster volume
+each time your system starts.</p>
+</div>
+<div class="paragraph">
+<p>The server specified in the mount command is only used to fetch the
+gluster configuration volfile describing the volume name. Subsequently,
+the client will communicate directly with the servers mentioned in the
+volfile (which might not even include the one used for mount).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To mount a volume, edit the /etc/fstab file and add the following
+line:</p>
+<div class="paragraph">
+<p><code>HOSTNAME-OR-IPADDRESS:/VOLNAME MOUNTDIR glusterfs defaults,_netdev 0 0</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>server1:/test-volume /mnt/glusterfs glusterfs defaults,_netdev 0 0</code></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Mounting Options</strong></p>
+</div>
+<div class="paragraph">
+<p>You can specify the following options when updating the /etc/fstab file.
+Note that you need to separate all options with commas.</p>
+</div>
+<div class="paragraph">
+<p>log-level=loglevel</p>
+</div>
+<div class="paragraph">
+<p>log-file=logfile</p>
+</div>
+<div class="paragraph">
+<p>transport=transport-type</p>
+</div>
+<div class="paragraph">
+<p>direct-io-mode=[enable|disable]</p>
+</div>
+<div class="paragraph">
+<p>use-readdirp=no</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>HOSTNAME-OR-IPADDRESS:/VOLNAME MOUNTDIR glusterfs defaults,_netdev,log-level=WARNING,log-file=/var/log/gluster.log 0 0</code></p>
+</div>
+<div class="sect3">
+<h4 id="testing-mounted-volumes"><a class="anchor" href="#testing-mounted-volumes"></a>Testing Mounted Volumes</h4>
+<div class="paragraph">
+<p>To test mounted volumes</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the following command:</p>
+<div class="paragraph">
+<p><code># mount</code></p>
+</div>
+<div class="paragraph">
+<p>If the gluster volume was successfully mounted, the output of the mount
+command on the client will be similar to this example:</p>
+</div>
+<div class="paragraph">
+<p><code>server1:/test-volume on /mnt/glusterfs type fuse.glusterfs (rw,allow_other,default_permissions,max_read=131072</code></p>
+</div>
+</li>
+<li>
+<p>Use the following command:</p>
+<div class="paragraph">
+<p><code># df</code></p>
+</div>
+<div class="paragraph">
+<p>The output of df command on the client will display the aggregated
+storage space from all the bricks in a volume similar to this example:</p>
+</div>
+<div class="paragraph">
+<p><code># df -h /mnt/glusterfs Filesystem Size Used Avail Use% Mounted on server1:/test-volume 28T 22T 5.4T 82% /mnt/glusterfs</code></p>
+</div>
+</li>
+<li>
+<p>Change to the directory and list the contents by entering the
+following:</p>
+<div class="paragraph">
+<p><code># cd MOUNTDIR</code> <code># ls</code></p>
+</div>
+</li>
+<li>
+<p>For example,</p>
+<div class="paragraph">
+<p><code># cd /mnt/glusterfs</code> <code># ls</code></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="nfs"><a class="anchor" href="#nfs"></a>NFS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use NFS v3 to access to gluster volumes. Extensive testing has
+be done on GNU/Linux clients and NFS implementation in other operating
+system, such as FreeBSD, and Mac OS X, as well as Windows 7
+(Professional and Up), Windows Server 2003, and others, may work with
+gluster NFS server implementation.</p>
+</div>
+<div class="paragraph">
+<p>GlusterFS now includes network lock manager (NLM) v4. NLM enables
+applications on NFSv3 clients to do record locking on files on NFS
+server. It is started automatically whenever the NFS server is run.</p>
+</div>
+<div class="paragraph">
+<p>You must install nfs-common package on both servers and clients (only
+for Debian-based) distribution.</p>
+</div>
+<div class="paragraph">
+<p>This section describes how to use NFS to mount Gluster volumes (both
+manually and automatically) and how to verify that the volume has been
+mounted successfully.</p>
+</div>
+<div class="sect2">
+<h3 id="using-nfs-to-mount-volumes"><a class="anchor" href="#using-nfs-to-mount-volumes"></a>##Using NFS to Mount Volumes</h3>
+<div class="paragraph">
+<p>You can use either of the following methods to mount Gluster volumes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#manual-nfs">Manually Mounting Volumes Using NFS</a></p>
+</li>
+<li>
+<p><a href="#auto-nfs">Automatically Mounting Volumes Using NFS</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Prerequisite</strong>: Install nfs-common package on both servers and clients
+(only for Debian-based distribution), using the following command:</p>
+</div>
+<div class="paragraph">
+<p><code>$ sudo aptitude install nfs-common</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>### Manually Mounting Volumes Using NFS</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To manually mount a Gluster volume using NFS</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To mount a volume, use the following command:</p>
+<div class="paragraph">
+<p><code># mount -t nfs -o vers=3 HOSTNAME-OR-IPADDRESS:/VOLNAME MOUNTDIR</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -t nfs -o vers=3 server1:/test-volume /mnt/glusterfs</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>Gluster NFS server does not support UDP. If the NFS client you are using
+defaults to connecting using UDP, the following message appears:</p>
+</div>
+<div class="paragraph">
+<p><code>requested NFS version or transport protocol is not supported</code>.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>To connect using TCP</strong></p>
+</div>
+</li>
+<li>
+<p>Add the following option to the mount command:</p>
+<div class="paragraph">
+<p><code>-o mountproto=tcp</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -o mountproto=tcp -t nfs server1:/test-volume /mnt/glusterfs</code></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To mount Gluster NFS server from a Solaris client</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the following command:</p>
+<div class="paragraph">
+<p><code># mount -o proto=tcp,vers=3 nfs://HOSTNAME-OR-IPADDRESS:38467/VOLNAME MOUNTDIR</code></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code># mount -o proto=tcp,vers=3 nfs://server1:38467/test-volume /mnt/glusterfs</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>### Automatically Mounting Volumes Using NFS</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can configure your system to automatically mount Gluster volumes
+using NFS each time the system starts.</p>
+</div>
+<div class="paragraph">
+<p><strong>To automatically mount a Gluster volume using NFS</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To mount a volume, edit the /etc/fstab file and add the following
+line:</p>
+<div class="paragraph">
+<p><code>HOSTNAME-OR-IPADDRESS:/VOLNAME MOUNTDIR nfs defaults,_netdev,vers=3 0 0</code></p>
+</div>
+<div class="paragraph">
+<p>For example,</p>
+</div>
+<div class="paragraph">
+<p><code>server1:/test-volume /mnt/glusterfs nfs defaults,_netdev,vers=3 0 0</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>Gluster NFS server does not support UDP. If the NFS client you are using
+defaults to connecting using UDP, the following message appears:</p>
+</div>
+<div class="paragraph">
+<p><code>requested NFS version or transport protocol is not supported.</code></p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>To connect using TCP</p>
+</div>
+</li>
+<li>
+<p>Add the following entry in /etc/fstab file :</p>
+<div class="paragraph">
+<p><code>HOSTNAME-OR-IPADDRESS:/VOLNAME MOUNTDIR nfs defaults,_netdev,mountproto=tcp 0 0</code></p>
+</div>
+<div class="paragraph">
+<p>For example,</p>
+</div>
+<div class="paragraph">
+<p><code>server1:/test-volume /mnt/glusterfs nfs defaults,_netdev,mountproto=tcp 0 0</code></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To automount NFS mounts</strong></p>
+</div>
+<div class="paragraph">
+<p>Gluster supports *nix standard method of automounting NFS mounts. Update
+the /etc/auto.master and /etc/auto.misc and restart the autofs service.
+After that, whenever a user or process attempts to access the directory
+it will be mounted in the background.</p>
+</div>
+<div class="sect3">
+<h4 id="testing-volumes-mounted-using-nfs"><a class="anchor" href="#testing-volumes-mounted-using-nfs"></a>Testing Volumes Mounted Using NFS</h4>
+<div class="paragraph">
+<p>You can confirm that Gluster directories are mounting successfully.</p>
+</div>
+<div class="paragraph">
+<p><strong>To test mounted volumes</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the mount command by entering the following:</p>
+<div class="paragraph">
+<p><code># mount</code></p>
+</div>
+<div class="paragraph">
+<p>For example, the output of the mount command on the client will display
+an entry like the following:</p>
+</div>
+<div class="paragraph">
+<p><code>server1:/test-volume on /mnt/glusterfs type nfs (rw,vers=3,addr=server1)</code></p>
+</div>
+</li>
+<li>
+<p>Use the df command by entering the following:</p>
+<div class="paragraph">
+<p><code># df</code></p>
+</div>
+<div class="paragraph">
+<p>For example, the output of df command on the client will display the
+aggregated storage space from all the bricks in a volume.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># df -h /mnt/glusterfs
+Filesystem              Size Used Avail Use% Mounted on
+server1:/test-volume    28T  22T  5.4T  82%  /mnt/glusterfs</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Change to the directory and list the contents by entering the
+following:</p>
+<div class="paragraph">
+<p><code># cd MOUNTDIR</code> <code># ls</code></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cifs"><a class="anchor" href="#cifs"></a>CIFS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use CIFS to access to volumes when using Microsoft Windows as
+well as SAMBA clients. For this access method, Samba packages need to be
+present on the client side. You can export glusterfs mount point as the
+samba export, and then mount it using CIFS protocol.</p>
+</div>
+<div class="paragraph">
+<p>This section describes how to mount CIFS shares on Microsoft
+Windows-based clients (both manually and automatically) and how to
+verify that the volume has mounted successfully.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>CIFS access using the Mac OS X Finder is not supported, however, you can
+use the Mac OS X command line to access Gluster volumes using CIFS.</p>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="using-cifs-to-mount-volumes"><a class="anchor" href="#using-cifs-to-mount-volumes"></a>Using CIFS to Mount Volumes</h3>
+<div class="paragraph">
+<p>You can use either of the following methods to mount Gluster volumes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#export-samba">Exporting Gluster Volumes Through Samba</a></p>
+</li>
+<li>
+<p><a href="#cifs-manual">Manually Mounting Volumes Using CIFS</a></p>
+</li>
+<li>
+<p><a href="#cifs-auto">Automatically Mounting Volumes Using CIFS</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can also use Samba for exporting Gluster Volumes through CIFS
+protocol.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>### Exporting Gluster Volumes Through Samba</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We recommend you to use Samba for exporting Gluster volumes through the
+CIFS protocol.</p>
+</div>
+<div class="paragraph">
+<p><strong>To export volumes through CIFS protocol</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Mount a Gluster volume.</p>
+</li>
+<li>
+<p>Setup Samba configuration to export the mount point of the Gluster
+volume.</p>
+<div class="paragraph">
+<p>For example, if a Gluster volume is mounted on /mnt/gluster, you must
+edit smb.conf file to enable exporting this through CIFS. Open smb.conf
+file in an editor and add the following lines for a simple
+configuration:</p>
+</div>
+<div class="paragraph">
+<p>comment = For testing a Gluster volume exported through CIFS</p>
+</div>
+<div class="paragraph">
+<p>path = /mnt/glusterfs</p>
+</div>
+<div class="paragraph">
+<p>read only = no</p>
+</div>
+<div class="paragraph">
+<p>guest ok = yes</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Save the changes and start the smb service using your systems init
+scripts (/etc/init.d/smb [re]start).</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Note</strong></p>
+</div>
+<div class="paragraph">
+<p>To be able mount from any server in the trusted storage pool, you must
+repeat these steps on each Gluster node. For more advanced
+configurations, see Samba documentation.</p>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>### Manually Mounting Volumes Using CIFS</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can manually mount Gluster volumes using CIFS on Microsoft
+Windows-based client machines.</p>
+</div>
+<div class="paragraph">
+<p><strong>To manually mount a Gluster volume using CIFS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Using Windows Explorer, choose <strong>Tools &gt; Map Network Drive…</strong> from the
+menu. The <strong>Map Network Drive</strong>window appears.</p>
+</li>
+<li>
+<p>Choose the drive letter using the <strong>Drive</strong> drop-down list.</p>
+</li>
+<li>
+<p>Click <strong>Browse</strong>, select the volume to map to the network drive, and
+click <strong>OK</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Finish.</strong></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The network drive (mapped to the volume) appears in the Computer window.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, to manually mount a Gluster volume using CIFS by going to
+<strong>Start &gt; Run</strong> and entering Network path manually.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>### Automatically Mounting Volumes Using CIFS</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can configure your system to automatically mount Gluster volumes
+using CIFS on Microsoft Windows-based clients each time the system
+starts.</p>
+</div>
+<div class="paragraph">
+<p><strong>To automatically mount a Gluster volume using CIFS</strong></p>
+</div>
+<div class="paragraph">
+<p>The network drive (mapped to the volume) appears in the Computer window
+and is reconnected each time the system starts.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Using Windows Explorer, choose <strong>Tools &gt; Map Network Drive…</strong> from the
+menu. The <strong>Map Network Drive</strong>window appears.</p>
+</li>
+<li>
+<p>Choose the drive letter using the <strong>Drive</strong> drop-down list.</p>
+</li>
+<li>
+<p>Click <strong>Browse</strong>, select the volume to map to the network drive, and
+click <strong>OK</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Reconnect</strong> at logon checkbox.</p>
+</li>
+<li>
+<p>Click <strong>Finish.</strong></p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="testing-volumes-mounted-using-cifs"><a class="anchor" href="#testing-volumes-mounted-using-cifs"></a>Testing Volumes Mounted Using CIFS</h4>
+<div class="paragraph">
+<p>You can confirm that Gluster directories are mounting successfully by
+navigating to the directory using Windows Explorer.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

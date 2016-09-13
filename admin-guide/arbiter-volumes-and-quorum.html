@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gluster User Documentation Latest | Gluster Docs Project | Arbiter-volumes and Quorum</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.asciibinder.org/"><img alt="AsciiBinder" src="../../latest/_images/asciibinder-logo-horizontal.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">Home</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster User Documentation Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../admin-guide/index.html">Gluster Docs Project</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Arbiter-volumes and Quorum
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Gluster Docs Project
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../admin-guide/index.html">Index</a></li>
+            <li><a class="" href="../admin-guide/access-control-lists.html">Access Control Lists</a></li>
+            <li><a class="" href="../admin-guide/accessing-gluster-from-windows.html">Accessing Gluster from Windows</a></li>
+            <li><a class=" active" href="../admin-guide/arbiter-volumes-and-quorum.html">Arbiter-volumes and Quorum</a></li>
+            <li><a class="" href="../admin-guide/bareos.html">BareOS</a></li>
+            <li><a class="" href="../admin-guide/brick-naming-conventions.html">Brick naming conventions</a></li>
+            <li><a class="" href="../admin-guide/building-qemu-with-gfapi-for-debian-based-systems.html">Building QEMU with gfapi for Debian-based systems</a></li>
+            <li><a class="" href="../admin-guide/cinder.html">Cinder</a></li>
+            <li><a class="" href="../admin-guide/Console.html">Console</a></li>
+            <li><a class="" href="../admin-guide/compiling-rpms.html">Compiling RPMs</a></li>
+            <li><a class="" href="../admin-guide/coreutils.html">Coreutils</a></li>
+            <li><a class="" href="../admin-guide/did-you-know.html">Did you know</a></li>
+            <li><a class="" href="../admin-guide/directory-quota.html">Diectory Quota</a></li>
+            <li><a class="" href="../admin-guide/distributed-geo-replication.html">Distributed Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/export-and-netgroup-authentication.html">Export and netgroup authentication</a></li>
+            <li><a class="" href="../admin-guide/filter.html">Filter</a></li>
+            <li><a class="" href="../admin-guide/geo-replication.html">Geo Replication</a></li>
+            <li><a class="" href="../admin-guide/glossary.html">Glossary</a></li>
+            <li><a class="" href="../admin-guide/gluster-on-zfs.html">Gluster on ZFS</a></li>
+            <li><a class="" href="../admin-guide/Hadoop.html">Hadoop</a></li>
+            <li><a class="" href="../admin-guide/Handling-of-users-with-many-groups.html">Handling of users with many groups</a></li>
+            <li><a class="" href="../admin-guide/introduction.html">Introduction</a></li>
+            <li><a class="" href="../admin-guide/iscsi.html">iSCSI</a></li>
+            <li><a class="" href="../admin-guide/keystore-quickstart.html">Keystore Quickstart</a></li>
+            <li><a class="" href="../admin-guide/linux-kernel-tuning.html">Linux Kernel Tuning</a></li>
+            <li><a class="" href="../admin-guide/logging.html">Logging</a></li>
+            <li><a class="" href="../admin-guide/managing-snapshots.html">Managing snapshots</a></li>
+            <li><a class="" href="../admin-guide/managing-volumes.html">Managing Volumes</a></li>
+            <li><a class="" href="../admin-guide/mandatory-locks.html">Mandatory Locks</a></li>
+            <li><a class="" href="../admin-guide/monitoring-workload.html">Monitoring Workload</a></li>
+            <li><a class="" href="../admin-guide/network-configuration-techniques.html">Network Configuration Techniques</a></li>
+            <li><a class="" href="../admin-guide/nfs-ganesha-integration.html">NFS-Ganesha Integration</a></li>
+            <li><a class="" href="../admin-guide/object-storage.html">Object storage</a></li>
+            <li><a class="" href="../admin-guide/performance-testing.html">Performance Testing</a></li>
+            <li><a class="" href="../admin-guide/Puppet.html">Puppet</a></li>
+            <li><a class="" href="../admin-guide/rdma-transport.html">RDMA Transport</a></li>
+            <li><a class="" href="../admin-guide/resolving-peer-rejected.html">Resolving Peer Rejected</a></li>
+            <li><a class="" href="../admin-guide/setting-up-clients.html">Setting up Clients</a></li>
+            <li><a class="" href="../admin-guide/setting-up-volumes.html">Setting up volumes</a></li>
+            <li><a class="" href="../admin-guide/ssl.html">SSL</a></li>
+            <li><a class="" href="../admin-guide/start-stop-daemon.html">Start Stop Daemon</a></li>
+            <li><a class="" href="../admin-guide/storage-pools.html">Storage Pools</a></li>
+            <li><a class="" href="../admin-guide/trash.html">Trash</a></li>
+            <li><a class="" href="../admin-guide/troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Arbiter volumes and quorum options in gluster</h2>
+        </div>
+        <div class="sect1">
+<h2 id="arbiter-volumes-and-quorum-options-in-gluster"><a class="anchor" href="#arbiter-volumes-and-quorum-options-in-gluster"></a>Arbiter volumes and quorum options in gluster</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The arbiter volume is special subset of replica 3 volumes that is aimed
+at preventing split-brains and providing the same consistency guarantees
+as a normal replica 3 volume without consuming 3x space. Before we look
+at how to create one and how they work etc. it is worthwhile to
+elaborate on the types of split-brain in gluster parlance and how
+features like server-quorum and client-quorum help in reducing the
+occurrence of split-brains to a certain extent.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="split-brains-in-replica-volumes"><a class="anchor" href="#split-brains-in-replica-volumes"></a>Split-brains in replica volumes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When a file is in split-brain, there is an inconsistency in either data
+or metadata (permissions, uid/gid, extended attributes etc.)of the file
+amongst the bricks of a replica <em>and</em> we do not have enough information
+to authoritatively pick a copy as being pristine and heal to the bad
+copies, despite all bricks being up and online. For directories, there
+is also an entry-split brain where a file inside it has different gfids/
+file-type (say one is a file and another is a directory of the same
+name) across the bricks of a replica.</p>
+</div>
+<div class="paragraph">
+<p>This
+<a href="https://github.com/gluster/glusterfs-specs/blob/master/done/Features/heal-info-and-split-brain-resolution.md">document</a>
+describes how to resolve files that are in split-brain using gluster cli
+or the mount point. Almost always, split-brains occur due to network
+disconnects (where a client temporarily loses connection to the bricks)
+and very rarely due to the gluster brick processes going down or
+returning an error.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="server-quorum-and-some-pitfalls"><a class="anchor" href="#server-quorum-and-some-pitfalls"></a>Server-quorum and some pitfalls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This
+<a href="http://www.gluster.org/community/documentation/index.php/Features/Server-quorum">document</a>
+provides a detailed description of this feature. The volume options for
+server-quorum are:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Option:cluster.server-quorum-ratio<br>
+Value Description: 0 to 100</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Option:cluster.server-quorum-type<br>
+Value Description: none | server<br>
+If set to server, this option enables the specified volume to
+participate in the server-side quorum. If set to none, that volume alone
+is not considered for volume checks.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>The cluster.server-quorum-ratio is a percentage figure and is cluster
+wide- i.e. you cannot have a different ratio for different volumes in
+the same trusted pool.</p>
+</div>
+<div class="paragraph">
+<p>For a two-node trusted storage pool it is important to set this value to
+be greater than 50% so that two nodes separated from each other do not
+both believe they have quorum simultaneously. For a 2 node plain replica
+volume, this would mean both nodes need to be up and running. So there
+is no notion of HA/failover.</p>
+</div>
+<div class="paragraph">
+<p>There are users who create a replica 2 volume from 2 nodes and
+peer-probe a 'dummy' node without bricks and enable server quorum with a
+ratio of 51%. This does not prevent files from getting into split-brain.
+For example, if B1 and B2 are the bricks/nodes of the replica and B3 is
+the dummy node, we can still end up in split-brain like so:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>B1 goes down, B2 and B3 are up. server-quorum is still. File is
+modified by the client.</p>
+</li>
+<li>
+<p>B2 goes down, B1 comes back up. Server-quorum is met. Same file is
+modified by the client.</p>
+</li>
+<li>
+<p>We now have different contents for the file in B1 and B2
+=&#8658;split-brain.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>In the author’s opinion, server quorum is useful if you want to avoid
+split-brains to the volume(s) configuration across the nodes and not in
+the I/O path. Unlike in client-quorum where the volume becomes read-only
+when quorum is lost, loss of server-quorum in a particular node makes
+glusterd kill the brick processes on that node (for the participating
+volumes) making even reads impossible.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="client-quorum"><a class="anchor" href="#client-quorum"></a>Client-quorum</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Client-quorum is a feature implemented in AFR to prevent split-brains in
+the I/O path for replicate/distributed-replicate volumes. By default, if
+the client-quorum is not met for a particular replica subvol, it becomes
+read-only. The other subvols (in a dist-rep volume) will still have R/W
+access.</p>
+</div>
+<div class="paragraph">
+<p>The following volume set options are used to configure it: &gt;Option:
+cluster.quorum-type<br>
+Default Value: none<br>
+Value Description: none|auto|fixed<br>
+If set to "fixed", this option allows writes to a file only if the
+number of active bricks in that replica set (to which the file belongs)
+is greater than or equal to the count specified in the 'quorum-count'
+option.<br>
+If set to "auto", this option allows writes to the file only if number
+of bricks that are up &gt;= ceil (of the total number of bricks that
+constitute that replica/2). If the number of replicas is even, then
+there is a further check: If the number of up bricks is exactly equal to
+n/2, then the first brick must be one of the bricks that is up. If it is
+more than n/2 then it is not necessary that the first brick is one of
+the up bricks.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Option: cluster.quorum-count<br>
+Value Description:<br>
+The number of bricks that must be active in a replica-set to allow
+writes. This option is used in conjunction with cluster.quorum-type
+<em>=fixed</em> option to specify the number of bricks to be active to
+participate in quorum. If the quorum-type is auto then this option has
+no significance.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Option: cluster.quorum-reads<br>
+Default Value: no<br>
+Value Description: yes|no<br>
+If quorum-reads is set to 'yes' (or 'true' or 'on') then even reads will
+be allowed only if quorum is met, without which the read (and writes)
+will return ENOTCONN. If set to 'no' (or 'false' or 'off'), then reads
+will be served even when quorum is not met, but writes will fail with
+EROFS.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="replica-2-and-replica-3-volumes"><a class="anchor" href="#replica-2-and-replica-3-volumes"></a>Replica 2 and Replica 3 volumes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>From the above descriptions, it is clear that client-quorum cannot
+really be applied to a replica 2 volume:(without costing HA). If the
+quorum-type is set to auto, then by the description given earlier, the
+first brick must always be up, irrespective of the status of the second
+brick. IOW, if only the second brick is up, the subvol becomes EROFS,
+i.e. no HA. If quorum-type is set to fixed, the the quorum-count <em>has</em>
+to be two to prevent split-brains. (otherwise a write can succeed in
+brick1, another in brick2 &#8658;split-brain). So for all practical purposes,
+if you want high availabilty in a replica 2 volume, it is recommended
+not to enable client-quorum.</p>
+</div>
+<div class="paragraph">
+<p>In a replica 3 volume, client-quorum is enabled by default and set to
+'auto'. This means 2 bricks need to be up for the writes to succeed.
+Here is how this configuration prevents files from ending up in
+split-brain:</p>
+</div>
+<div class="paragraph">
+<p>Say B1, B2 and B3 are the bricks: 1. B3 is down, quorum is met, write
+happens on the file on B1 and B2 2. B3 comes up, B2 is down, quorum is
+again met, a write happens on B1 and B3. 3. B2 comes up, B1 goes down,
+quorum is met. Now when a write is issued, AFR sees that B2 and B3&#8217;s
+pending xattrs blame each other and therefore the write is not allowed
+and is failed with an EIO.</p>
+</div>
+<div class="paragraph">
+<p>There is a corner case even with replica 3 volumes where the file can
+end up in a split-brain. AFR usually takes range locks for the \{offset,
+length} of the write. If 3 writes happen on the same file at
+non-overlapping \{offset, length} and each write fails on (only) one
+different brick, then we have AFR xattrs of the file blaming each other.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="arbiter-configuration"><a class="anchor" href="#arbiter-configuration"></a>Arbiter configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The arbiter configuration a.k.a. the arbiter volume is the perfect sweet
+spot between a 2-way replica and 3-way replica to avoid files getting
+into split-brain, <strong><em>without the 3x storage space</em></strong> as mentioned earlier.
+The syntax for creating the volume is: &gt;#gluster volume create replica 3
+arbiter 1 host1:brick1 host2:brick2 host3:brick3</p>
+</div>
+<div class="paragraph">
+<p>For example: &gt;#gluster volume create testvol replica 3 arbiter 1
+127.0.0.2:/bricks/brick\{1..6} force<br>
+volume create: testvol: success: please start the volume to access data</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div id="gluster-volume-info" class="paragraph">
+<p>gluster volume info</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Volume Name: testvol +
+Type: Distributed-Replicate +
+Volume ID: ae6c4162-38c2-4368-ae5d-6bad141a4119 +
+Status: Created +
+Number of Bricks: 2 x (2 + 1) = 6 +
+Transport-type: tcp +
+Bricks: +
+Brick1: 127.0.0.2:/bricks/brick1 +
+Brick2: 127.0.0.2:/bricks/brick2 +
+Brick3: 127.0.0.2:/bricks/brick3 (arbiter) +
+Brick4: 127.0.0.2:/bricks/brick4 +
+Brick5: 127.0.0.2:/bricks/brick5 +
+Brick6: 127.0.0.2:/bricks/brick6 (arbiter) +
+Options Reconfigured : transport.address-family: inet +
+performance.readdir-ahead: on `</pre>
+</div>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Notice that the 3rd brick of every replica subvol is designated as the
+arbiter brick. This brick will store only the file/directory names (i.e.
+the tree structure) and extended attributes (metadata) but not any data.
+i.e. the file size (as shown by <code>ls -l</code>) will be zero bytes. It will
+also store other gluster metadata like the .glusterfs folder and its
+contents. Since the arbiter volume is also a type of replica 3 volume,
+client-quourm is enabled by default and set to 'auto'. This setting is
+<strong>not</strong> to be changed.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="arbiter-bricks-sizing"><a class="anchor" href="#arbiter-bricks-sizing"></a>Arbiter brick(s) sizing:</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Since the arbiter brick does not store file data, its disk usage will be
+considerably lesser than the other bricks of the replica. The sizing of
+the brick will depend on how many files you plan to store in the volume.
+A good estimate will be 4kb times the no.of files in the replica.</p>
+</div>
+<div class="sect2">
+<h3 id="how-it-works"><a class="anchor" href="#how-it-works"></a>How it works:</h3>
+<div class="paragraph">
+<p>There are 2 components to the arbiter volume. One is the arbiter xlator
+that is loaded in the brick process of every 3rd (i.e. the arbiter)
+brick. The other is the arbitration logic itself that is present in AFR
+(the replicate xlator) loaded on the clients.</p>
+</div>
+<div class="paragraph">
+<p>The former acts as a sort of 'filter' translator for the FOPS- i.e. it
+allows entry operations to hit posix, blocks certain inode operations
+like read (unwinds the call with ENOTCONN) and unwinds other inode
+operations like write, truncate etc. with success without winding it
+down to posix.</p>
+</div>
+<div class="paragraph">
+<p>The latter. i.e. the arbitration logic present in AFR does the
+following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Takes full file locks when writing to a file as opposed to range locks
+in a normal replicate volume. This prevents the corner-case split-brain
+described earlier for 3 way replicas.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The behaviour of arbiter volumes in allowing/failing write FOPS in
+conjunction with client-quorum can be summarized in the below steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If all 3 bricks are up (happy case), then there is no issue and the
+FOPs are allowed.</p>
+</li>
+<li>
+<p>If 2 bricks are up and if one of them is the arbiter (i.e. the 3rd
+brick) <em>and</em> it blames the other up brick for a given file, then all
+write FOPS will fail with ENOTCONN. This is because in this scenario,
+the only true copy is on the brick that is down. Hence we cannot allow
+writes until that brick is also up. If the arbiter doesn&#8217;t blame the
+other brick, FOPS will be allowed to proceed. 'Blaming' here is w.r.t
+the values of AFR changelog extended attributes.</p>
+</li>
+<li>
+<p>If 2 bricks are up and the arbiter is down, then FOPS will be allowed.
+When the arbiter comes up, the entry/metadata heals to it happen. Of
+course data heals are not needed.</p>
+</li>
+<li>
+<p>If only one brick is up, then client-quorum is not met and the volume
+becomes EROFS.</p>
+</li>
+<li>
+<p>In all cases, if there is only one source before the FOP is initiated
+(even if all bricks are up) and if the FOP fails on that source, the
+application will receive ENOTCONN. For example, assume that a write
+failed on B2 and B3, i.e. B1 is the only source. Now if for some reason,
+the second write failed on B1 (before there was a chance for selfheal to
+complete despite all brick being up), the application would receive
+failure (ENOTCONN) for that write.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The bricks being up or down described above does not necessarily mean
+the brick process is offline. It can also mean the mount lost the
+connection to the brick due to network disconnects etc.</p>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>
